@@ -56,7 +56,7 @@ export function Layout() {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border shadow-sm">
+      <header className="sticky top-0 z-50 bg-secondary/95 backdrop-blur border-b border-white/10 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -65,8 +65,8 @@ export function Layout() {
                 <span className="text-white text-xl">🎲</span>
               </div>
               <div className="hidden sm:block">
-                <div className="font-semibold text-lg text-foreground"> Game Café</div>
-                <div className="text-xs text-muted-foreground">Brætspil • D&D • VR</div>
+                <div className="font-semibold text-lg text-white"> Game Café</div>
+                <div className="text-xs text-white/60">Brætspil • D&D • VR</div>
               </div>
             </Link>
 
@@ -79,8 +79,8 @@ export function Layout() {
                       to={item.path}
                       className={`px-4 py-2 rounded-md flex items-center gap-1 transition-colors ${
                         location.pathname === item.path || location.pathname.startsWith(item.path + "/")
-                          ? "bg-primary/10 text-primary"
-                          : "hover:bg-muted text-foreground"
+                          ? "bg-primary/20 text-primary"
+                          : "hover:bg-white/10 text-white/90"
                       }`}
                     >
                       {item.label}
@@ -91,7 +91,7 @@ export function Layout() {
                         <Link
                           key={child.path}
                           to={child.path}
-                          className={`block px-4 py-2 hover:bg-muted transition-colors ${
+                          className={`block px-4 py-2 hover:bg-primary/10 transition-colors ${
                             location.pathname === child.path ? "text-primary bg-primary/5" : "text-foreground"
                           }`}
                         >
@@ -106,8 +106,8 @@ export function Layout() {
                     to={item.path}
                     className={`px-4 py-2 rounded-md transition-colors ${
                       location.pathname === item.path
-                        ? "bg-primary/10 text-primary"
-                        : "hover:bg-muted text-foreground"
+                        ? "bg-primary/20 text-primary"
+                        : "hover:bg-white/10 text-white/90"
                     }`}
                   >
                     {item.label}
@@ -121,7 +121,7 @@ export function Layout() {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 hover:bg-muted rounded-md transition-colors"
+              className="lg:hidden p-2 hover:bg-white/10 rounded-md transition-colors text-white"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -130,15 +130,15 @@ export function Layout() {
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="lg:hidden py-4 border-t border-border">
+            <div className="lg:hidden py-4 border-t border-white/10">
               {navItems.map((item) => (
                 <div key={item.path}>
                   <Link
                     to={item.path}
                     className={`block px-4 py-2 rounded-md transition-colors ${
                       location.pathname === item.path
-                        ? "bg-primary/10 text-primary"
-                        : "hover:bg-muted text-foreground"
+                        ? "bg-primary/20 text-primary"
+                        : "hover:bg-white/10 text-white/90"
                     }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -152,8 +152,8 @@ export function Layout() {
                           to={child.path}
                           className={`block px-4 py-2 rounded-md text-sm transition-colors ${
                             location.pathname === child.path
-                              ? "bg-primary/10 text-primary"
-                              : "hover:bg-muted text-muted-foreground"
+                              ? "bg-primary/20 text-primary"
+                              : "hover:bg-white/10 text-white/60"
                           }`}
                           onClick={() => setMobileMenuOpen(false)}
                         >
@@ -178,18 +178,18 @@ export function Layout() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-card border-t border-border mt-16">
+      <footer className="bg-secondary text-white border-t border-white/10 mt-16">
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="mb-4">Game Café</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-white/60">
                 Din hyggelige destination for brætspil, D&D sessions, and VR oplevelser i hjertet af København.
               </p>
             </div>
             <div>
               <h4 className="mb-4">Hurtige Links</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+              <ul className="space-y-2 text-sm text-white/60">
                 <li>
                   <Link to="/board-games" className="hover:text-primary transition-colors">
                     Brætspil
@@ -214,14 +214,14 @@ export function Layout() {
             </div>
             <div>
               <h4 className="mb-4">Kontakt</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+              <ul className="space-y-2 text-sm text-white/60">
                 <li>📍 Nørre Voldgade 18, København</li>
                 <li>📞 +45 12 34 56 78</li>
                 <li>📧 spil@escape-cph.dk</li>
               </ul>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
+          <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/40">
             © 2026  Game Café. Alle rettigheder forbeholdes.
           </div>
         </div>

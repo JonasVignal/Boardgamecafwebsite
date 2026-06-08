@@ -46,19 +46,19 @@ export function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20 overflow-hidden">
+      <section className="relative bg-secondary overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIwLjUiIG9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30"></div>
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 bg-primary/20 rounded-full backdrop-blur-sm border border-primary/30">
-              <span className="text-sm text-foreground/80">🎮 Velkommen til Københavns hyggeliste Café</span>
+              <span className="text-sm text-white/80">🎮 Velkommen til Københavns hyggeliste Café</span>
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 text-foreground leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 text-white leading-tight">
                Brætspil, D&D og VR
               <br />
               <span className="text-primary">I hjerte af København</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-white/70 mb-8 max-w-2xl mx-auto">
               Kom og hyg med et brætspil, hvad enten du er ekspert eller blot begynder til spil.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -115,7 +115,7 @@ export function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-primary to-accent py-16 md:py-24">
+      <section className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl mb-4 text-white">Klar til at spille?</h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">

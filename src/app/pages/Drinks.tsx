@@ -7,49 +7,44 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 export function Drinks() {
   const categories = [
     {
-      title: "☕ Hot Drinks",
+      title: "Varme drikke & Snacks",
       icon: Coffee,
       items: [
-        { name: "Espresso", price: "25 DKK" },
-        { name: "Cappuccino", price: "35 DKK" },
-        { name: "Latte", price: "35 DKK" },
-        { name: "Hot Chocolate", price: "35 DKK" },
-        { name: "Tea (selection)", price: "30 DKK" },
-      ],
-    },
-    {
-      title: "🥤 Cold Drinks",
-      icon: Wine,
-      items: [
-        { name: "Soft Drinks", price: "25 DKK" },
-        { name: "Iced Coffee", price: "40 DKK" },
-        { name: "Juice", price: "30 DKK" },
-        { name: "Smoothie", price: "45 DKK" },
-        { name: "Water", price: "20 DKK" },
-      ],
-    },
-    {
-      title: "🍺 Beer & Wine",
-      icon: Beer,
-      items: [
-        { name: "Draft Beer (0.4L)", price: "45 DKK" },
-        { name: "Craft Beer", price: "55 DKK" },
-        { name: "Cider", price: "50 DKK" },
-        { name: "House Wine (glass)", price: "55 DKK" },
-        { name: "House Wine (bottle)", price: "200 DKK" },
-      ],
-    },
-    {
-      title: "🍰 Snacks & Food",
-      icon: Cake,
-      items: [
-        { name: "Sandwich", price: "55 DKK" },
-        { name: "Pastry", price: "35 DKK" },
+        { name: "Espresso", price: "20 DKK" },
+        { name: "Cappuccino", price: "20 DKK" },
+        { name: "Latte", price: "20 DKK" },
+        { name: "Tea (selection)", price: "20 DKK" },
         { name: "Chips", price: "25 DKK" },
         { name: "Nuts & Trail Mix", price: "30 DKK" },
-        { name: "Cake Slice", price: "45 DKK" },
       ],
     },
+    {
+      title: "Sodavand & Lemonade",
+      icon: Wine,
+      items: [
+        { name: "Tuborg Squash Appelsin", price: "25 DKK" },
+        { name: "Tuborg Squash Sportsvand", price: "25 DKK" },
+        { name: "Tuborg Squash Fersken", price: "25 DKK" },
+        { name: "Lemonade Rhubarb", price: "25 DKK" },
+        { name: "Lemonade Hyldeblomst", price: "25 DKK" },
+        { name: "Lemonade Passionsfrugt", price: "25 DKK" },
+        { name: "Lemonade Hindbær", price: "25 DKK" },
+
+      ],
+    },
+    {
+      title: "Øl & Vin",
+      icon: Beer,
+      items: [
+        { name: "Carslberg Classic", price: "35 DKK" },
+        { name: "Brooklyn Stonewall inn IPA", price: "35 DKK" },
+        { name: "Mikkeler Japanese Rice lager", price: "35 DKK" },
+        { name: "Mikkeler Burst IPA", price: "35 DKK" },
+        { name: "Brewmasters IPA", price: "35 DKK" },
+
+      ],
+    },
+
   ];
 
   return (
@@ -68,9 +63,9 @@ export function Drinks() {
       <section className="container mx-auto px-4 pb-16">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <div className="text-6xl mb-6">☕🍺</div>
-          <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Drinks & Snacks Menu</h1>
+          <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Lidt til hals og gane</h1>
           <p className="text-lg text-muted-foreground">
-            Fuel your gaming sessions with our selection of drinks and snacks. All served at your table!
+            Lidt til hals og gane imens i spiller
           </p>
         </div>
 
