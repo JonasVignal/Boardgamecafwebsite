@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Gamepad2, Users, Zap, Coffee, Calendar } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/common/ImageWithFallback";
 
 export function Home() {
   const features = [

@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { ArrowLeft, Coffee, Wine, Beer, Cake } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/common/ImageWithFallback";
 
 export function Drinks() {
   const categories = [

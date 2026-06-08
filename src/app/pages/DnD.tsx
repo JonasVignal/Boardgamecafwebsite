@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Scroll, Sparkles, Users, Calendar } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/common/ImageWithFallback";
 
 export function DnD() {
   const sessions = [

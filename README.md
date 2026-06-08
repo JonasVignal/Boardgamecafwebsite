@@ -1,7 +1,7 @@
 
   # Board Game Café Website
 
-  This is a code bundle for Board Game Café Website. The original project is available at https://www.figma.com/design/vTLcjpAdtNYOg9QEyxGiEc/Board-Game-Caf%C3%A9-Website.
+  This is a code bundle for Board Game Café Website.
 
   ## Running the code
 

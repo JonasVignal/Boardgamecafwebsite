@@ -3,7 +3,7 @@ import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
 import { Users, Clock, Signal, ArrowLeft, CheckCircle2 } from "lucide-react";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/common/ImageWithFallback";
 
 export function GameDetail() {
   const { gameId } = useParams();
