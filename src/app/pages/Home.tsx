@@ -13,13 +13,7 @@ export function Home() {
       image: "https://images.unsplash.com/photo-1677094365560-9f88ce594e7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmllbmRzJTIwcGxheWluZyUyMGJvYXJkJTIwZ2FtZXN8ZW58MXx8fHwxNzczNDExMjY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       link: "/board-games",
     },
-    {
-      icon: Users,
-      title: "D&D Sessions",
-      description: "Oplev den magiske verden i Dungeons & Dragons. Prøv med vores rutineret Gamemaster eller styr spillet selv.",
-      image: "https://images.unsplash.com/photo-1696197819150-9645c9256577?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkdW5nZW9ucyUyMGRyYWdvbnMlMjB0YWJsZXRvcCUyMGdhbWluZ3xlbnwxfHx8fDE3NzM0OTYwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      link: "/dnd",
-    },
+
     {
       icon: Zap,
       title: "VR - Stop the Bomb",
@@ -54,7 +48,7 @@ export function Home() {
               <span className="text-sm text-white/80">🎮 Velkommen til Københavns hyggeliste Café</span>
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl mb-6 text-white leading-tight">
-               Brætspil, D&D og VR
+               Brætspil og VR
               <br />
               <span className="text-primary">I hjerte af København</span>
             </h1>

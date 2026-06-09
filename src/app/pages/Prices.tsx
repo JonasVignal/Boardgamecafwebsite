@@ -38,19 +38,7 @@ export function Prices() {
         "Comfortable seating",
       ],
     },
-    {
-      title: "D&D with GM",
-      price: "150 DKK",
-      period: "per person/session",
-      features: [
-        "3-4 hour session",
-        "Professional Game Master",
-        "All materials provided",
-        "Miniatures and maps",
-        "Complimentary refreshments",
-      ],
-      badge: "Popular",
-    },
+
     {
       title: "VR Experience",
       price: "200 DKK",
@@ -124,7 +112,7 @@ export function Prices() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {packages.map((pkg, index) => (
               <Card
                 key={index}

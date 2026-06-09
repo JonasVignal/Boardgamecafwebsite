@@ -172,8 +172,6 @@ export function Book() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="board-games">Board Games</SelectItem>
-                      <SelectItem value="dnd-with-gm">D&D with Game Master</SelectItem>
-                      <SelectItem value="dnd-without-gm">D&D without Game Master</SelectItem>
                       <SelectItem value="vr">VR - Stop the Bomb</SelectItem>
                       <SelectItem value="general">General Visit</SelectItem>
                     </SelectContent>

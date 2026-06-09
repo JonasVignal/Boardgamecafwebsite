@@ -17,22 +17,14 @@ export function Layout() {
         { label: "Kategorier", path: "/board-games/categories" },
       ],
     },
-    {
-      label: "D&D",
-      path: "/dnd",
-      children: [
-        { label: "Med Game Master", path: "/dnd/with-gm" },
-        { label: "Uden Game Master", path: "/dnd/without-gm" },
-      ],
-    },
+
     { label: "VR - Stop the Bomb", path: "/vr" },
     {
       label: "Priser",
       path: "/prices",
       children: [
         { label: "Spillebord pr time", path: "/prices/table-rates" },
-        { label: "Dungeons & Dragons", path: "/prices/dnd" },
-        { label: "Spil med Gamemaster", path: "/prices/gamemaster" },
+
         { label: "Drikkevarer & Snacks", path: "/prices/drinks" },
       ],
     },
@@ -66,7 +58,7 @@ export function Layout() {
               </div>
               <div className="hidden sm:block">
                 <div className="font-semibold text-lg text-white"> Game Café</div>
-                <div className="text-xs text-white/60">Brætspil • D&D • VR</div>
+                <div className="text-xs text-white/60">Brætspil • VR</div>
               </div>
             </Link>
 
@@ -184,7 +176,7 @@ export function Layout() {
             <div>
               <h3 className="mb-4">Game Café</h3>
               <p className="text-sm text-white/60">
-                Din hyggelige destination for brætspil, D&D sessions, and VR oplevelser i hjertet af København.
+                Din hyggelige destination for brætspil and VR oplevelser i hjertet af København.
               </p>
             </div>
             <div>
@@ -195,11 +187,7 @@ export function Layout() {
                     Brætspil
                   </Link>
                 </li>
-                <li>
-                  <Link to="/dnd" className="hover:text-primary transition-colors">
-                    D&D Sessions
-                  </Link>
-                </li>
+
                 <li>
                   <Link to="/vr" className="hover:text-primary transition-colors">
                     VR Oplevelser
