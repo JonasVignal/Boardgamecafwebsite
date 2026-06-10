@@ -67,7 +67,7 @@ export function TableRates() {
       <section className="bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20 py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl mb-6">🪑</div>
+            <div className="text-6xl mb-6"></div>
             <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Spillebord pr. time</h1>
             <p className="text-lg text-muted-foreground">
               Simpel, gennemsigtig prissætning for adgang til hele vores spilbibliotek
@@ -82,9 +82,8 @@ export function TableRates() {
           {rates.map((rate, index) => (
             <Card
               key={index}
-              className={`border-2 hover:shadow-xl transition-all relative ${
-                rate.badge ? "border-primary/50" : "hover:border-primary/50"
-              }`}
+              className={`border-2 hover:shadow-xl transition-all relative ${rate.badge ? "border-primary/50" : "hover:border-primary/50"
+                }`}
             >
               {rate.badge && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -179,7 +178,7 @@ export function TableRates() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Bestil mad og drikke direkte til dit bord (separat betaling)
+                    Bestil snacks og drikkevarer direkte til dit bord (separat betaling)
                   </p>
                 </CardContent>
               </Card>

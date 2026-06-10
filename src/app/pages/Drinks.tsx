@@ -65,7 +65,7 @@ export function Drinks() {
           <div className="text-6xl mb-6">☕🍺</div>
           <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Lidt til hals og gane</h1>
           <p className="text-lg text-muted-foreground">
-            Lidt til hals og gane imens i spiller
+            Lidt til halsen og ganen imens i spiller
           </p>
         </div>
 
@@ -130,9 +130,8 @@ export function Drinks() {
               <CardContent>
                 <div className="text-2xl text-primary mb-2">65 DKK</div>
                 <CardDescription className="text-sm">
-                  Any hot drink + sandwich
+                  To sodavand + Chips
                   <br />
-                  <span className="text-xs">(Save 25 DKK)</span>
                 </CardDescription>
               </CardContent>
             </Card>

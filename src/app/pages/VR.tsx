@@ -11,7 +11,7 @@ export function VR() {
       <section className="relative bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="text-6xl mb-6">🥽💣</div>
+            <div className="text-6xl mb-6"></div>
             <h1 className="text-4xl md:text-5xl mb-6 text-foreground">VR: Stop the Bomb</h1>
             <p className="text-lg text-muted-foreground mb-8">
               Den ultimative samarbejdsoplevelse i VR! Sammen skal I finde ud af, hvordan bomben deaktiveres, før tiden løber ud!
@@ -141,7 +141,7 @@ export function VR() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Vælg mellem 5 forskellige bombskits, med varierende sværhedsgrader.
+                  Vælg mellem forskellige bombemissioner, med varierende sværhedsgrader.
                 </p>
               </CardContent>
             </Card>
