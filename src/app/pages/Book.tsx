@@ -24,15 +24,13 @@ export function Book() {
             <CardHeader>
               <CardTitle className="text-3xl mb-4">Ready to play?</CardTitle>
             </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-                We use EasyTable for all our bookings to ensure you get the best and most accurate availability.
-              </p>
-              <a href="https://book.easytable.com/book/?id=33141&lang=auto" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="w-full md:w-auto px-12 py-6 text-lg">
-                  Proceed to Booking System
-                </Button>
-              </a>
+            <CardContent className="p-0 overflow-hidden rounded-b-xl">
+              <iframe 
+                src="https://book.easytable.com/book/?id=33141&lang=auto" 
+                className="w-full h-[600px] border-0"
+                title="EasyTable Booking System"
+                allow="geolocation; microphone; camera"
+              ></iframe>
             </CardContent>
           </Card>
 
