@@ -34,26 +34,38 @@ export function Directions() {
             <CardContent className="p-0">
               {/* Embedded Map Placeholder */}
               <div className="relative w-full h-96 md:h-[600px] bg-muted flex items-center justify-center">
-                <div className="text-center p-8">
-                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl mb-2">Brætspils Café</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Nørre Voldgade 18, 1358 København K
+                <div className="absolute inset-0 w-full h-full">
+                  <iframe 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }}
+                    src="https://maps.google.com/maps?width=100%25&height=600&hl=da&q=N%C3%B8rre%20Voldgade%2018,%201358%20K%C3%B8benhavn%20K+(Br%C3%A6tspils%20Caf%C3%A9)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div className="relative bg-background/90 backdrop-blur-sm p-8 rounded-xl shadow-lg text-center max-w-sm mx-4">
+                  <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <h3 className="text-xl font-bold mb-2">Brætspils Café</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Nørre Voldgade 18<br />
+                    1358 København K
                   </p>
-                  <div className="flex flex-wrap gap-3 justify-center">
+                  <div className="flex flex-col gap-3">
                     <a
-                      href="https://www.https://www.google.com/maps/place/Escape+Copenhagen+I+-+v.+N%C3%B8rreport+St./@55.6798253,12.5649698,481m/data=!3m3!1e3!4b1!5s0x4652530fadb2973f:0x1ea0667c2859e954!4m6!3m5!1s0x4652530fadb1d42d:0x2472d29a8a7ebb2f!8m2!3d55.6798223!4d12.5675447!16s%2Fg%2F11dyrbb430?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D.com/maps"
+                      href="https://www.google.com/maps/place/Escape+Copenhagen+I+-+v.+N%C3%B8rreport+St./@55.6798253,12.5649698,481m/data=!3m3!1e3!4b1!5s0x4652530fadb2973f:0x1ea0667c2859e954!4m6!3m5!1s0x4652530fadb1d42d:0x2472d29a8a7ebb2f!8m2!3d55.6798223!4d12.5675447!16s%2Fg%2F11dyrbb430?entry=ttu"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button>Åbn i Google Maps</Button>
+                      <Button className="w-full">Åbn i Google Maps</Button>
                     </a>
                     <a
-                      href="https://https://maps.apple.com/place?address=N%C3%B8rre+Voldgade+18%2C+1358+K%C3%B8benhavn+K%2C+Danmark&coordinate=55.679816%2C12.567435&name=N%C3%B8rre+Voldgade+18.apple.com"
+                      href="https://maps.apple.com/place?address=N%C3%B8rre+Voldgade+18%2C+1358+K%C3%B8benhavn+K%2C+Danmark&coordinate=55.679816%2C12.567435&name=N%C3%B8rre+Voldgade+18"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button variant="outline">Åbn i Apple Maps</Button>
+                      <Button variant="outline" className="w-full">Åbn i Apple Maps</Button>
                     </a>
                   </div>
                 </div>
