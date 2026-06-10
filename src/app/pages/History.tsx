@@ -116,7 +116,7 @@ export function History() {
                   I 2014 havde en gruppe venner en drøm: at skabe et sted hvor folk kunne mødes, afbryde fra den digitale verden og nyde magien med spil og leg sammen.
                 </p>
                 <p>
-                  Det startede som et escape room i det optiske tårn på Rejshaleøen. Men kærligheden til spil og fællesskabet der opstod omkring dem var umiddelbar.
+                  Det startede som et escape room i det optiske tårn på Refshaleøen. Men kærligheden til spil og fællesskabet der opstod omkring dem var umiddelbar.
                 </p>
                 <p>
                   Hvad der gjorde os anderledes var ikke bare spillene - det var atmosfæren. Vi ønskede at skabe et sted hvor alle følte sig velkomne, uanset om de var erfarne gamers eller helt nye til spillere.
