@@ -161,7 +161,7 @@ export function Prices() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">💳 Betalingsmetoder</CardTitle>
+                <CardTitle className="text-lg">Betalingsmetoder</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -172,7 +172,7 @@ export function Prices() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🎁 Grupperabatter</CardTitle>
+                <CardTitle className="text-lg">Grupperabatter</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -183,7 +183,7 @@ export function Prices() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🎟️ Rabat kort</CardTitle>
+                <CardTitle className="text-lg">Rabat kort</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -194,7 +194,7 @@ export function Prices() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🍰 Fødselsdags Pakker</CardTitle>
+                <CardTitle className="text-lg">Fødselsdags Pakker</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
