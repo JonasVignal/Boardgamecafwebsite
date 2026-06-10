@@ -152,45 +152,18 @@ export function About() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="bg-muted/50 py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Meet the Team</h2>
-            <p className="text-lg text-muted-foreground">
-              The passionate people who make it all happen
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center border-2 hover:border-primary/50 hover:shadow-lg transition-all">
-                <CardHeader>
-                  <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-4xl">👤</span>
-                  </div>
-                  <CardTitle>{member.name}</CardTitle>
-                  <CardDescription className="text-primary">{member.role}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{member.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="container mx-auto px-4 py-16">
         <div className="bg-gradient-to-r from-primary to-accent rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl mb-4">Join Our Community</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Vær med i vores fællesskab</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Whether you're a solo gamer looking to make friends or bringing your own group, you're always welcome at Copenhagen Game Café.
+            Uanset om du er en solo gamer der søger nye venner, eller kommer med egen gruppe, er du altid velkommen hos Brætspils Café.
           </p>
           <Link to="/book">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book Your Visit
+              Book dit besøg
             </Button>
           </Link>
         </div>
