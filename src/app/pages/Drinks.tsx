@@ -144,9 +144,8 @@ export function Drinks() {
               <CardContent>
                 <div className="text-2xl text-primary mb-2">90 DKK</div>
                 <CardDescription className="text-sm">
-                  2 beers + chips or nuts
+                  2 øl + chips eller nødder
                   <br />
-                  <span className="text-xs">(Save 25 DKK)</span>
                 </CardDescription>
               </CardContent>
             </Card>
@@ -157,11 +156,10 @@ export function Drinks() {
                 <CardTitle>Sweet Break</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl text-primary mb-2">60 DKK</div>
+                <div className="text-2xl text-primary mb-2">40 DKK</div>
                 <CardDescription className="text-sm">
-                  Coffee + pastry or cake
+                  Kaffe + Nødder
                   <br />
-                  <span className="text-xs">(Save 20 DKK)</span>
                 </CardDescription>
               </CardContent>
             </Card>
@@ -177,12 +175,12 @@ export function Drinks() {
               <CardTitle>Menu Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-sm text-muted-foreground">
-              <p>• All drinks and food can be ordered at the counter or via our staff</p>
-              <p>• We deliver directly to your gaming table</p>
-              <p>• Vegetarian and vegan options available</p>
-              <p>• Please let us know about any allergies or dietary restrictions</p>
-              <p>• All prices include VAT</p>
-              <p>• Menu items subject to availability</p>
+              <p>• Alle drikkevarer og snacks kan bestilles ved disken eller via vores personale</p>
+              <p>• Vi leverer direkte til jeres bord</p>
+              <p>• Vegetariske og veganske muligheder findes</p>
+              <p>• Angiv venligst eventuelle allergier eller kostrestriktioner</p>
+              <p>• Alle priser er inklusiv moms</p>
+              <p>• Menuvarer afhænger af lagerstatus</p>
             </CardContent>
           </Card>
         </div>
@@ -191,13 +189,13 @@ export function Drinks() {
       {/* CTA */}
       <section className="bg-gradient-to-r from-primary to-accent py-16 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl mb-4">Ready to Play & Enjoy?</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Klar til at spille og nyde?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Book your table and we'll make sure you're well-fed and hydrated throughout your gaming session!
+            Book dit bord og vi sørger for, at du er veludhvilet og hydreret under hele din gaming session!
           </p>
           <Link to="/book">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book a Table
+              Book dit bord her
             </Button>
           </Link>
         </div>
