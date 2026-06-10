@@ -23,7 +23,7 @@ export function OpeningHours() {
       <section className="bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20 py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl mb-6">🕐</div>
+            <div className="text-6xl mb-6"></div>
             <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Åbningstider</h1>
             <p className="text-lg text-muted-foreground">
               Kom og besøg os eller book dit bord i forvejen
