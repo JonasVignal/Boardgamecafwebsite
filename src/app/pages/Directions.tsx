@@ -22,7 +22,7 @@ export function Directions() {
           <div className="text-6xl mb-6">📍</div>
           <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Find Vej</h1>
           <p className="text-lg text-muted-foreground">
-            Beliggende i hjertet af København på Nørrebrogade
+            Beliggende i hjertet af København på Nørre Voldgade
           </p>
         </div>
       </section>
@@ -36,9 +36,9 @@ export function Directions() {
               <div className="relative w-full h-96 md:h-[600px] bg-muted flex items-center justify-center">
                 <div className="text-center p-8">
                   <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl mb-2">Copenhagen Game Café</h3>
+                  <h3 className="text-xl mb-2">Brætspils Café</h3>
                   <p className="text-muted-foreground mb-4">
-                    Nørrebrogade 123, 2200 Copenhagen N
+                    Nørre Voldgade 18, 1358 København K
                   </p>
                   <div className="flex flex-wrap gap-3 justify-center">
                     <a
@@ -85,11 +85,8 @@ export function Directions() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
-                  <strong className="text-foreground block mb-2">Nørrebro Station (5 min gang)</strong>
-                  Linjer: S-tog (A, B, C, E, H)
-                  <br />
-                  <br />
-                  <strong className="text-foreground block mb-2">Nørreport Station (10 min gang)</strong>
+
+                  <strong className="text-foreground block mb-2">Nørreport Station (5 min gang)</strong>
                   Linjer: Metro M1, M2 + S-tog
                 </CardDescription>
               </CardContent>
@@ -107,11 +104,9 @@ export function Directions() {
               <CardContent>
                 <CardDescription className="text-sm">
                   <strong className="text-foreground block mb-2">Nærmeste stop:</strong>
-                  Nørrebrogade (Linjer 5A, 350S)
+                  Nørre Voldgade (Linjer 5A, 350S)
                   <br />
-                  <br />
-                  <strong className="text-foreground block mb-2">Alternativ:</strong>
-                  Nørrebros Runddel (Linje 3A)
+
                 </CardDescription>
               </CardContent>
             </Card>
@@ -128,11 +123,10 @@ export function Directions() {
               <CardContent>
                 <CardDescription className="text-sm">
                   <strong className="text-foreground block mb-2">Cykelparkering tilgængelig</strong>
-                  Stativer direkte foran caféen
+                  Stativer på den anden side af gaden
                   <br />
-                  <br />
-                  <strong className="text-foreground block mb-2">Cykelvenlig rute</strong>
-                  Direkte adgang via Nørrebrogades cykelsti
+
+
                 </CardDescription>
               </CardContent>
             </Card>
@@ -151,10 +145,10 @@ export function Directions() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Begrænset betalt gadeparkering tilgængelig på Nørrebrogade og omkringliggende gader.
+                  Begrænset betalt gadeparkering tilgængelig på Nørre Voldgade og omkringliggende gader.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  <strong>Pris:</strong> ~20 DKK/time (varierer efter zone)
+                  <strong>Pris:</strong> ~44 DKK/time (varierer efter zone)
                   <br />
                   <strong>Betaling:</strong> EasyPark app eller parkeringsautomater
                 </p>
@@ -174,7 +168,7 @@ export function Directions() {
                   <br />
                   Frederiksborggade 11
                   <br />
-                  10 minutters gang fra caféen
+                  5 minutters gang fra caféen
                 </p>
               </CardContent>
             </Card>
@@ -194,27 +188,27 @@ export function Directions() {
       <section className="bg-muted/50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl mb-8 text-foreground">Nærliggende Vartegn</h2>
+            <h2 className="text-3xl md:text-4xl mb-8 text-foreground">Nærliggende Restauranter</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
               <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🌳</div>
-                <div className="font-medium">Assistens Kirkegård</div>
-                <div className="text-muted-foreground text-xs">5 min gang</div>
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Cocks and Cows</div>
+                <div className="text-muted-foreground text-xs">2 min gang</div>
               </div>
               <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🍺</div>
-                <div className="font-medium">Mikkeller Bar</div>
-                <div className="text-muted-foreground text-xs">3 min gang</div>
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Restaurant Dan´sk</div>
+                <div className="text-muted-foreground text-xs">1 min gang</div>
               </div>
               <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🏛️</div>
-                <div className="font-medium">Søerne</div>
-                <div className="text-muted-foreground text-xs">10 min gang</div>
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Cafe Venner</div>
+                <div className="text-muted-foreground text-xs">2 min gang</div>
               </div>
               <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🎭</div>
-                <div className="font-medium">Nørrebro Teater</div>
-                <div className="text-muted-foreground text-xs">7 min gang</div>
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Restaurant Vækst</div>
+                <div className="text-muted-foreground text-xs">4 min gang</div>
               </div>
             </div>
           </div>
