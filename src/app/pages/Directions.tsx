@@ -42,14 +42,14 @@ export function Directions() {
                   </p>
                   <div className="flex flex-wrap gap-3 justify-center">
                     <a
-                      href="https://www.google.com/maps"
+                      href="https://www.https://www.google.com/maps/place/Escape+Copenhagen+I+-+v.+N%C3%B8rreport+St./@55.6798253,12.5649698,481m/data=!3m3!1e3!4b1!5s0x4652530fadb2973f:0x1ea0667c2859e954!4m6!3m5!1s0x4652530fadb1d42d:0x2472d29a8a7ebb2f!8m2!3d55.6798223!4d12.5675447!16s%2Fg%2F11dyrbb430?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D.com/maps"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Button>Åbn i Google Maps</Button>
                     </a>
                     <a
-                      href="https://maps.apple.com"
+                      href="https://https://maps.apple.com/place?address=N%C3%B8rre+Voldgade+18%2C+1358+K%C3%B8benhavn+K%2C+Danmark&coordinate=55.679816%2C12.567435&name=N%C3%B8rre+Voldgade+18.apple.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
