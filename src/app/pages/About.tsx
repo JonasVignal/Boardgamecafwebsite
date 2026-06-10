@@ -56,11 +56,10 @@ export function About() {
                   Brætspils Café startede d. 1. Juli 2026 af en gruppe passionerede Brætspil Entusiaster der ønskede at skabe et sted hvor folk kunne mødes, slukke fra den digitale verden og nyde magien af brætspil.
                 </p>
                 <p>
-                  Hvad der startede som en lille café med 50 spil er vokset til Københavns førende destination for brætspil, D&D og fordybende VR-oplevelser. Vi tilbyder nu over 500 spil og byder tusindvis af besøgende velkommen hver måned.
-                </p>
-                <p>
-                  Vores mission er enkel: at sprede glæden ved at spille spil og skabe et hyggeligt rum hvor venskaber bliver dannet, historier bliver fortalt og minder bliver skabt rundt om spillebordet.
-                </p>
+                  Hvad der startede som en escape room virksomhed er siden vokset med oplevelser, og nu bringer vi brætspils cafeen til menuen. Vi tilbyder over 100 spil og månedlige events.
+                  <p>
+                    Vores mission er enkel: at sprede glæden ved at spille spil og skabe et hyggeligt rum hvor venskaber bliver dannet, historier bliver fortalt og minder bliver skabt rundt om spillebordet.
+                  </p>
               </div>
             </div>
             <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
