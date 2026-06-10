@@ -115,8 +115,8 @@ export function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+          <div className="flex justify-center mb-12">
+            <div className="relative h-80 w-full max-w-3xl rounded-xl overflow-hidden shadow-lg">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1677094365560-9f88ce594e7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmllbmRzJTIwcGxheWluZyUyMGJvYXJkJTIwZ2FtZXN8ZW58MXx8fHwxNzczNDExMjY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Gaming space"
@@ -127,8 +127,6 @@ export function About() {
                 <p className="text-white/80 text-sm"></p>
               </div>
             </div>
-
-
           </div>
 
           <Card className="border-2">
