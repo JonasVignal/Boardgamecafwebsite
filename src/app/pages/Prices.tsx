@@ -6,49 +6,49 @@ import { Check, ArrowRight } from "lucide-react";
 export function Prices() {
   const tableRates = [
     {
-      name: "Weekday Rate",
-      time: "Monday - Thursday",
+      name: "Hverdage",
+      time: "Mandag - Torsdag",
       price: "50 DKK/person",
-      description: "All-day access to our board game library",
+      description: "Hele dagen adgang til vores brætspilsbiblioteket",
     },
     {
-      name: "Weekend Rate",
-      time: "Friday - Sunday",
+      name: "Weekender",
+      time: "Fredag - Søndag",
       price: "75 DKK/person",
-      description: "All-day access to our board game library",
+      description: "Hele dagen adgang til vores brætspilsbiblioteket",
     },
     {
-      name: "Student Discount",
-      time: "Any day (with valid ID)",
+      name: "Studierabat",
+      time: "Alle dage (med gyldigt ID)",
       price: "40 DKK/person",
-      description: "Special rate for students",
+      description: "Specialpris for studerende",
     },
   ];
 
   const packages = [
     {
-      title: "Board Game Access",
+      title: "Brætspil",
       price: "50-75 DKK",
       period: "per person",
       features: [
-        "Access to 500+ board games",
-        "All-day play",
-        "Game recommendations from staff",
-        "Rules explanation included",
-        "Comfortable seating",
+        "Adgang til 1000+ brætspil",
+        "Hele dagen adgang",
+        "Anbefalinger fra personalet",
+        "Reglerne forklaret til spillet",
+        "Hyggelige siddepladser",
       ],
     },
 
     {
-      title: "VR Experience",
+      title: "VR Oplevelse",
       price: "200 DKK",
-      period: "per group (2-4 players)",
+      period: "per Person (2-4 spillere)",
       features: [
-        "30 minutes gameplay",
-        "All equipment included",
-        "Tutorial and guidance",
-        "Sanitized VR headsets",
-        "Perfect for groups",
+        "30 minutters spilletid",
+        "Alt udstyr inkluderet",
+        "Introduktion og vejledning",
+        "Rensede VR headsets",
+        "Perfekt til grupper",
       ],
     },
   ];
@@ -60,9 +60,9 @@ export function Prices() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-6xl mb-6">💰</div>
-            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Pricing</h1>
+            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Pris  er</h1>
             <p className="text-lg text-muted-foreground">
-              Simple, transparent pricing for all our activities. Pay only for what you enjoy!
+              Enkel og transparent prissætning for alle vores aktiviteter. Betal kun for det, du nyder!
             </p>
           </div>
         </div>
@@ -71,9 +71,9 @@ export function Prices() {
       {/* Table Access Rates */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Table Access Rates</h2>
+          <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Bord priser</h2>
           <p className="text-lg text-muted-foreground">
-            One-time fee for all-day access to our complete game library
+            Engangsbeløb for adgang til alle spillene hele dagen
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export function Prices() {
         <div className="text-center">
           <Link to="/prices/drinks">
             <Button size="lg" variant="outline" className="group">
-              View Drinks Menu
+              Se Drikkekort
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
@@ -106,9 +106,9 @@ export function Prices() {
       <section className="bg-muted/50 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Activity Packages</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Andre Aktiviteter</h2>
             <p className="text-lg text-muted-foreground">
-              Choose from our different gaming experiences
+              Vælg mellem vores forskellige gamingoplevelser
             </p>
           </div>
 
@@ -116,9 +116,8 @@ export function Prices() {
             {packages.map((pkg, index) => (
               <Card
                 key={index}
-                className={`border-2 hover:shadow-xl transition-all relative ${
-                  pkg.badge ? "border-primary/50" : "hover:border-primary/50"
-                }`}
+                className={`border-2 hover:shadow-xl transition-all relative ${pkg.badge ? "border-primary/50" : "hover:border-primary/50"
+                  }`}
               >
                 {pkg.badge && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -157,27 +156,27 @@ export function Prices() {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl mb-8 text-center text-foreground">
-            Good to Know
+            Godt at vide
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">💳 Payment Methods</CardTitle>
+                <CardTitle className="text-lg">💳 Betalingsmetoder</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  We accept cash, credit cards (Visa, Mastercard), Dankort, and mobile payment (MobilePay).
+                  Vi tager imod kontanter, kreditkort (Visa, Mastercard), Dankort og mobilbetaling (MobilePay).
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🎁 Group Discounts</CardTitle>
+                <CardTitle className="text-lg">🎁 Grupperabatter</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Groups of 8+ people get 10% off. Perfect for birthday parties and corporate events!
+                  Grupper på 8+ personer får 10% rabat. Perfekt til fødselsdagsfester og firmaarrangementer!
                 </p>
               </CardContent>
             </Card>
@@ -188,18 +187,18 @@ export function Prices() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Buy a 10-visit card and get 15% off total price. Great for regular visitors!
+                  Køb et 10-besøgs kort og få 15% rabat på totalprisen. Perfekt til stamkunder!
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🍰 Birthday Packages</CardTitle>
+                <CardTitle className="text-lg">🍰 Fødselsdags Pakker</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Special birthday packages available with private room, decorations, and cake. Contact us for details!
+                  Specielle fødselsdagspakker tilgængelige med privat rum, dekorationer og kage. Kontakt os for detaljer!
                 </p>
               </CardContent>
             </Card>
@@ -210,13 +209,13 @@ export function Prices() {
       {/* CTA */}
       <section className="bg-gradient-to-r from-primary to-accent py-16 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl mb-4">Ready to Play?</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Klar til at Spille?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Book your table now and start your gaming adventure today!
+            Book din bord nu og start dit gaming eventyr i dag!
           </p>
           <Link to="/book">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book a Table
+              Book jeres Bord
             </Button>
           </Link>
         </div>
