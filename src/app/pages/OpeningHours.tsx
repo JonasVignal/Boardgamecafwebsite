@@ -156,10 +156,10 @@ export function OpeningHours() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:info@escape-cph.dk"
+                    href="mailto:info@Brætspilscafe.dk"
                     className="text-lg text-primary hover:underline"
                   >
-                    info@escape-cph.dk
+                    info@Brætspilscafe.dk
                   </a>
                 </CardContent>
               </Card>
