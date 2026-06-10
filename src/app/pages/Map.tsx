@@ -85,12 +85,10 @@ export function Map() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
-                  <strong className="text-foreground block mb-2">Nørreport Station (5 min gåtur)</strong>
-                  Lines: S-train (A, B, C, E, H)
-                  <br />
+
                   <br />
                   <strong className="text-foreground block mb-2">Nørreport Station (5 min gåtur)</strong>
-                  Lines: Metro M1, M2 + S-trains
+                  Lines: Metro M1, M2 + S-toget
                 </CardDescription>
               </CardContent>
             </Card>
@@ -177,7 +175,9 @@ export function Map() {
           <Card className="mt-6 bg-accent/10 border-2 border-accent/30">
             <CardContent className="pt-6">
               <p className="text-sm text-muted-foreground text-center">
-                💡 <strong>Tip:</strong> Vi anbefaler at bruge offentlig transport eller cykel når du besøger København. Det er hurtigere, billigere og mere miljøvenligt!
+                💡 <strong>Tip:</strong> Vi anbefaler at bruge offentlig transport eller cykel når du besøger København.
+                <br />
+                Det er hurtigere, billigere og mere miljøvenligt!
               </p>
             </CardContent>
           </Card>
