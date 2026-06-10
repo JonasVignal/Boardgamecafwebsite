@@ -7,11 +7,11 @@ export function Book() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20 py-16 md:py-20">
         <div className="container mx-auto px-4">
-           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl mb-6">📅</div>
-            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Book a Table</h1>
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="text-6xl mb-6"></div>
+            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Book et bord</h1>
             <p className="text-lg text-muted-foreground">
-              Reserve your spot at Copenhagen Game Café. Click the button below to be redirected to our secure booking system.
+              Book din plads på Copenhagen Game Café. Klik på knappen nedenfor for at blive omdirigeret til vores bookingsystem.
             </p>
           </div>
         </div>
@@ -22,11 +22,11 @@ export function Book() {
         <div className="max-w-3xl mx-auto">
           <Card className="border-2 text-center py-12">
             <CardHeader>
-              <CardTitle className="text-3xl mb-4">Ready to play?</CardTitle>
+              <CardTitle className="text-3xl mb-4">Klar til at spille?</CardTitle>
             </CardHeader>
             <CardContent className="p-0 overflow-hidden rounded-b-xl">
-              <iframe 
-                src="https://book.easytable.com/book/?id=33141&lang=auto" 
+              <iframe
+                src="https://book.easytable.com/book/?id=33141&lang=auto"
                 className="w-full h-[600px] border-0"
                 title="EasyTable Booking System"
                 allow="geolocation; microphone; camera"
@@ -38,22 +38,22 @@ export function Book() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Walk-ins Welcome!</CardTitle>
+                <CardTitle className="text-lg">Walk-ins er velkommen!</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  While we recommend booking ahead, we also accept walk-ins based on availability. Peak hours are Friday-Sunday evenings.
+                  Selvom vi anbefaler at booke i forvejen, tager vi også imod walk-ins baseret på tilgængelighed. Højsæsonen er fredag-søndag aftener.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Cancellation Policy</CardTitle>
+                <CardTitle className="text-lg">Aflysningspolitik</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Please notify us at least 24 hours in advance if you need to cancel or reschedule your booking through the booking link provided in your confirmation email.
+                  Afmeld venligst senest 24 timer i forvejen, hvis du ønsker at aflyse eller ændre din booking via bookingsystemet.
                 </p>
               </CardContent>
             </Card>
@@ -64,19 +64,19 @@ export function Book() {
       {/* Contact Info */}
       <section className="bg-muted/50 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl mb-4 text-foreground">Need Help?</h2>
+          <h2 className="text-2xl md:text-3xl mb-4 text-foreground">Brug for hjælp?</h2>
           <p className="text-muted-foreground mb-6">
-            If you have questions or prefer to book by phone, we're here to help!
+            Hvis du har spørgsmål eller foretrækker at booke bord via telefon, er vi her for at hjælpe!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+4512345678">
+            <a href="tel:+4592909191">
               <Button variant="outline" size="lg">
-                📞 Call Us: +45 12 34 56 78
+                📞 Ring til os: +45 92 90 91 91
               </Button>
             </a>
-            <a href="mailto:hello@gamecafe.dk">
+            <a href="mailto:[EMAIL_ADDRESS]">
               <Button variant="outline" size="lg">
-                📧 Email: hello@gamecafe.dk
+                📧 Email: [EMAIL_ADDRESS]
               </Button>
             </a>
           </div>
