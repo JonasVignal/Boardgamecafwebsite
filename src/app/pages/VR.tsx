@@ -14,7 +14,7 @@ export function VR() {
             <div className="text-6xl mb-6">🥽💣</div>
             <h1 className="text-4xl md:text-5xl mb-6 text-foreground">VR: Stop the Bomb</h1>
             <p className="text-lg text-muted-foreground mb-8">
-              The ultimate cooperative VR experience! Work together with your team to defuse a bomb before time runs out. Communication and teamwork are essential!
+              Den ultimative samarbejdsoplevelse i VR! Sammen skal I finde ud af, hvordan bomben deaktiveres, før tiden løber ud!
             </p>
           </div>
 
@@ -27,8 +27,8 @@ export function VR() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             <div className="absolute bottom-8 left-8 right-8 text-white">
-              <h3 className="text-2xl mb-2">Immersive Virtual Reality Experience</h3>
-              <p className="text-white/90">Feel like you're really there with cutting-edge VR technology</p>
+              <h3 className="text-2xl mb-2">Uforglemmelig oplevelse</h3>
+              <p className="text-white/90">Med nyeste teknologi inddrages du i den virtuelle verden</p>
             </div>
           </div>
         </div>
@@ -37,9 +37,9 @@ export function VR() {
       {/* How It Works */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl mb-4 text-foreground">How It Works</h2>
+          <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Hvordan virker det?</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A thrilling cooperative challenge that tests your team's communication skills
+            En nervepirrende opgave, som tester jeres evne til at kommunikere og samarbejde! <br></br>
           </p>
         </div>
 
@@ -49,9 +49,9 @@ export function VR() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
                 1
               </div>
-              <h3 className="mb-2">Get Briefed</h3>
+              <h3 className="mb-2">Få en introduktion</h3>
               <p className="text-sm text-muted-foreground">
-                Learn the basics and get equipped with VR headsets
+                Få et overblik over spillet og udstyret
               </p>
             </div>
 
@@ -59,9 +59,9 @@ export function VR() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
                 2
               </div>
-              <h3 className="mb-2">Enter VR</h3>
+              <h3 className="mb-2">Træd ind i den virtuelle virkelighed</h3>
               <p className="text-sm text-muted-foreground">
-                One player sees the bomb, others see the manual
+                Én person ser bomben, de andre ser manualen
               </p>
             </div>
 
@@ -69,9 +69,9 @@ export function VR() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
                 3
               </div>
-              <h3 className="mb-2">Communicate</h3>
+              <h3 className="mb-2">Kommunikér!</h3>
               <p className="text-sm text-muted-foreground">
-                Describe what you see and work together
+                Beskriv hvad du ser og arbejd sammen
               </p>
             </div>
 
@@ -79,9 +79,9 @@ export function VR() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
                 4
               </div>
-              <h3 className="mb-2">Defuse!</h3>
+              <h3 className="mb-2">Deaktiver bomben!</h3>
               <p className="text-sm text-muted-foreground">
-                Cut the right wires before time runs out
+                Klip de rigtige ledninger før tiden løber ud
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export function VR() {
           <Card className="bg-accent/20 border-2 border-accent">
             <CardContent className="pt-6">
               <p className="text-center text-muted-foreground">
-                <strong>The Challenge:</strong> Only one player can see the bomb in VR, while the others have the defusal manual. You must describe what you see and follow instructions carefully. One wrong move and... BOOM! 💥
+                <strong>Udfordringen:</strong> Én person ser bomben, de andre ser manualen. Beskriv hvad du ser og følg instruktionerne. Én forkert bevægelse og... BOOM! 💥
               </p>
             </CardContent>
           </Card>
@@ -100,7 +100,7 @@ export function VR() {
       <section className="bg-muted/50 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Why You'll Love It</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Hvorfor du vil elske det!</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -113,7 +113,7 @@ export function VR() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Perfect team-building activity that requires cooperation
+                  Perfekt til firmaevents og teambuilding! Kræver stærk kommunikation
                 </p>
               </CardContent>
             </Card>
@@ -127,7 +127,7 @@ export function VR() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Heart-pounding action with a ticking clock
+                  Pulsen stiger i takt med uret – kan I klare presset?!
                 </p>
               </CardContent>
             </Card>
@@ -141,7 +141,7 @@ export function VR() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Multiple difficulty levels to test your skills
+                  Vælg mellem 5 forskellige bombskits, med varierende sværhedsgrader.
                 </p>
               </CardContent>
             </Card>
@@ -155,7 +155,7 @@ export function VR() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Each round is 5-10 minutes - play multiple times!
+                  Hver runde tager kun 5-10 minutter – spil igen og slå rekorden!
                 </p>
               </CardContent>
             </Card>
@@ -167,36 +167,36 @@ export function VR() {
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Pricing & Details</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Pris & Detaljer</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-2 hover:border-primary/50 transition-all">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Single Session</CardTitle>
-                <CardDescription>30 minutes of VR gameplay</CardDescription>
+                <CardDescription>30 minutter i den virtuelle virkelighed</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="text-center mb-6">
                   <div className="text-4xl mb-2">200 DKK</div>
-                  <p className="text-sm text-muted-foreground">per group (2-4 players)</p>
+                  <p className="text-sm text-muted-foreground">pr. person</p>
                 </div>
                 <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    30 minutes play time
+                    30 minutters spilletid
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    All equipment included
+                    Alt nødvendigt udstyr medfølger
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    Brief tutorial included
+                    En kort introduktion inden spillet
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    2-4 players
+                    2-4 spillere
                   </li>
                 </ul>
                 <Link to="/book">
@@ -212,36 +212,36 @@ export function VR() {
                 <span className="bg-primary text-white px-4 py-1 rounded-full text-sm">Best Value</span>
               </div>
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Party Package</CardTitle>
-                <CardDescription>1 hour of VR gameplay</CardDescription>
+                <CardTitle className="text-2xl">Prime Time</CardTitle>
+                <CardDescription>60 minutters spilletid</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="text-center mb-6">
                   <div className="text-4xl mb-2 text-primary">350 DKK</div>
                   <p className="text-sm text-muted-foreground">
-                    per group (2-4 players) <span className="line-through">400 DKK</span>
+                    pr. gruppe (2-4 personer) <span className="line-through">400 DKK</span>
                   </p>
                 </div>
                 <ul className="space-y-2 mb-6 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    1 hour play time
+                    60 minutters spilletid
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    All equipment included
+                    Alt nødvendigt udstyr medfølger
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    Complimentary drinks
+                    En kort introduktion inden spillet
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                    Photo opportunity
+                    2-4 spillere
                   </li>
                 </ul>
                 <Link to="/book">
-                  <Button className="w-full">Book Package</Button>
+                  <Button className="w-full">Book</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -250,14 +250,14 @@ export function VR() {
           {/* Additional Info */}
           <Card className="mt-8 border-2">
             <CardHeader>
-              <CardTitle>Important Information</CardTitle>
+              <CardTitle>Vigtig Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2 text-sm text-muted-foreground">
-              <p>• Recommended for ages 12+ (younger players welcome with adult supervision)</p>
-              <p>• Sessions must be booked in advance</p>
-              <p>• Groups can rotate through the VR headset during the session</p>
-              <p>• We provide sanitized equipment and regular cleaning</p>
-              <p>• Not recommended for those prone to motion sickness</p>
+              <p>• Anbefales til alderen 12+ (yngre spillere er velkomne med opsyn af voksne)</p>
+              <p>• Sessioner skal bookes i forvejen</p>
+              <p>• Grupper kan rotere igennem VR headsettet i løbet af sessionen</p>
+              <p>• Vi leverer desinficeret udstyr og regelmæssig rengøring</p>
+              <p>• Ikke anbefalet for dem, der er tilbøjelige til køresyge</p>
             </CardContent>
           </Card>
         </div>
@@ -266,9 +266,9 @@ export function VR() {
       {/* CTA */}
       <section className="bg-gradient-to-r from-primary to-accent py-16 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl mb-4">Ready for the Challenge?</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Klar til Udfordringen?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Test your team's skills and see if you can defuse the bomb before it's too late!
+            Test dit teams færdigheder og se om I kan desarmere bomben, før det er for sent!
           </p>
           <Link to="/book">
             <Button size="lg" variant="secondary" className="text-lg px-8">

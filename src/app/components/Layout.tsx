@@ -65,11 +65,10 @@ export function Layout() {
                   <div key={item.path} className="relative group">
                     <Link
                       to={item.path}
-                      className={`px-4 py-2 rounded-md flex items-center gap-1 transition-colors ${
-                        location.pathname === item.path || location.pathname.startsWith(item.path + "/")
+                      className={`px-4 py-2 rounded-md flex items-center gap-1 transition-colors ${location.pathname === item.path || location.pathname.startsWith(item.path + "/")
                           ? "bg-primary/20 text-primary"
                           : "hover:bg-white/10 text-white/90"
-                      }`}
+                        }`}
                     >
                       {item.label}
                       <ChevronDown className="w-4 h-4" />
@@ -79,9 +78,8 @@ export function Layout() {
                         <Link
                           key={child.path}
                           to={child.path}
-                          className={`block px-4 py-2 hover:bg-primary/10 transition-colors ${
-                            location.pathname === child.path ? "text-primary bg-primary/5" : "text-foreground"
-                          }`}
+                          className={`block px-4 py-2 hover:bg-primary/10 transition-colors ${location.pathname === child.path ? "text-primary bg-primary/5" : "text-foreground"
+                            }`}
                         >
                           {child.label}
                         </Link>
@@ -92,11 +90,10 @@ export function Layout() {
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`px-4 py-2 rounded-md transition-colors ${
-                      location.pathname === item.path
+                    className={`px-4 py-2 rounded-md transition-colors ${location.pathname === item.path
                         ? "bg-primary/20 text-primary"
                         : "hover:bg-white/10 text-white/90"
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </Link>
@@ -123,11 +120,10 @@ export function Layout() {
                 <div key={item.path}>
                   <Link
                     to={item.path}
-                    className={`block px-4 py-2 rounded-md transition-colors ${
-                      location.pathname === item.path
+                    className={`block px-4 py-2 rounded-md transition-colors ${location.pathname === item.path
                         ? "bg-primary/20 text-primary"
                         : "hover:bg-white/10 text-white/90"
-                    }`}
+                      }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -138,11 +134,10 @@ export function Layout() {
                         <Link
                           key={child.path}
                           to={child.path}
-                          className={`block px-4 py-2 rounded-md text-sm transition-colors ${
-                            location.pathname === child.path
+                          className={`block px-4 py-2 rounded-md text-sm transition-colors ${location.pathname === child.path
                               ? "bg-primary/20 text-primary"
                               : "hover:bg-white/10 text-white/60"
-                          }`}
+                            }`}
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {child.label}
@@ -191,7 +186,7 @@ export function Layout() {
                 </li>
                 <li>
                   <Link to="/book" className="hover:text-primary transition-colors">
-                    Book 
+                    Book
                   </Link>
                 </li>
               </ul>
@@ -199,9 +194,9 @@ export function Layout() {
             <div>
               <h4 className="mb-4">Kontakt</h4>
               <ul className="space-y-2 text-sm text-white/60">
-                <li>📍 Nørre Voldgade 18, København</li>
-                <li>📞 +45 12 34 56 78</li>
-                <li>📧 spil@escape-cph.dk</li>
+                <li>📍 Nørre Voldgade 18, 1358 København K</li>
+                <li>📞 +45 42 90 91 91</li>
+                <li>📧 info@brætspilscafe.dk</li>
               </ul>
             </div>
           </div>
