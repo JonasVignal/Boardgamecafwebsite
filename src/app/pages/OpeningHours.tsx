@@ -50,8 +50,8 @@ export function OpeningHours() {
                     <div
                       key={index}
                       className={`flex items-center justify-between py-3 px-4 rounded-lg transition-all ${index === todayIndex
-                          ? "bg-primary/10 border-2 border-primary/30"
-                          : "border border-transparent hover:bg-muted/50"
+                        ? "bg-primary/10 border-2 border-primary/30"
+                        : "border border-transparent hover:bg-muted/50"
                         }`}
                     >
                       <div className="flex items-center gap-3">
@@ -80,7 +80,7 @@ export function OpeningHours() {
             <Card className="mt-6 bg-accent/10 border-2 border-accent/30">
               <CardContent className="pt-6">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Vær venligst opmærksom på:</strong> Sidste indkald er 1 time før lukketid. Vi kan lukke tidligt på helligdage - tjek venligst vores sociale medier eller ring i forvejen.
+                  <strong className="text-foreground">Vær venligst opmærksom på:</strong> Sidste udkald er 1 time før lukketid. Vi kan lukke tidligt på helligdage - tjek venligst vores sociale medier eller ring i forvejen.
                 </p>
               </CardContent>
             </Card>
@@ -108,11 +108,11 @@ export function OpeningHours() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-3">
-                    Nørrebrogade 123
+                    Nørre Voldgade 18
                     <br />
-                    2200 Copenhagen N
+                    1358 København K
                     <br />
-                    Denmark
+                    Danmark
                   </p>
                   <Link to="/opening-hours/map">
                     <Button variant="outline" className="group">
@@ -137,7 +137,7 @@ export function OpeningHours() {
                 </CardHeader>
                 <CardContent>
                   <a href="tel:+4512345678" className="text-lg text-primary hover:underline">
-                    +45 12 34 56 78
+                    +45 42 90 91 91
                   </a>
                 </CardContent>
               </Card>
@@ -156,10 +156,10 @@ export function OpeningHours() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:hello@gamecafe.dk"
+                    href="mailto:info@escape-cph.dk"
                     className="text-lg text-primary hover:underline"
                   >
-                    hello@gamecafe.dk
+                    info@escape-cph.dk
                   </a>
                 </CardContent>
               </Card>
