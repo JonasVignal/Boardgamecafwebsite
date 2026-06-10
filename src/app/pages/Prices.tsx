@@ -59,8 +59,8 @@ export function Prices() {
       <section className="bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20 py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl mb-6">💰</div>
-            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Pris  er</h1>
+            <div className="text-6xl mb-6"></div>
+            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Priser</h1>
             <p className="text-lg text-muted-foreground">
               Enkel og transparent prissætning for alle vores aktiviteter. Betal kun for det, du nyder!
             </p>
@@ -183,7 +183,7 @@ export function Prices() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🎟️ Membership Cards</CardTitle>
+                <CardTitle className="text-lg">🎟️ Rabat kort</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
@@ -198,7 +198,7 @@ export function Prices() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Specielle fødselsdagspakker tilgængelige med privat rum, dekorationer og kage. Kontakt os for detaljer!
+                  Fejre din fødselsdag med brætspil og flag på bordet.
                 </p>
               </CardContent>
             </Card>
