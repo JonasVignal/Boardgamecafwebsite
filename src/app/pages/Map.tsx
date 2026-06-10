@@ -22,7 +22,7 @@ export function Map() {
           <div className="text-6xl mb-6">📍</div>
           <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Find Us</h1>
           <p className="text-lg text-muted-foreground">
-            Located in the heart of Copenhagen on Nørrebrogade
+            Vi ligger på Nørre Voldgade 18, lige i hjertet af København
           </p>
         </div>
       </section>
@@ -36,24 +36,24 @@ export function Map() {
               <div className="relative w-full h-96 md:h-[600px] bg-muted flex items-center justify-center">
                 <div className="text-center p-8">
                   <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl mb-2">Copenhagen Game Café</h3>
+                  <h3 className="text-xl mb-2">Brætspils Café</h3>
                   <p className="text-muted-foreground mb-4">
-                    Nørrebrogade 123, 2200 Copenhagen N
+                    Nørre Voldgade 18, 1358 København K
                   </p>
                   <div className="flex flex-wrap gap-3 justify-center">
                     <a
-                      href="https://www.google.com/maps"
+                      href="https://www.google.com/maps/place/Br%C3%A6tspils+Caf%C3%A9/@55.6831042,12.5674544,14z/data=!4m17!1m11!3m7!1s0x4648535d5212a647:0xfd8628cd4a8c532!2sN%C3%B8rre+Voldgade+18,+1358+K%C3%B8benhavn+K!3b1!4m2!3d55.6831035!4d12.568687!16s%2Fm%2F02r9c0w!3m6!1s0x4648535d5212a647:0xfd8628cd4a8c532!8m2!3d55.6831035!4d12.568687!9m1!1.0!5s2026-06!10e4?entry=ttu"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button>Open in Google Maps</Button>
+                      <Button>Åben i Google Maps</Button>
                     </a>
                     <a
                       href="https://maps.apple.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button variant="outline">Open in Apple Maps</Button>
+                      <Button variant="outline">Åben i Apple Maps</Button>
                     </a>
                   </div>
                 </div>
@@ -67,9 +67,9 @@ export function Map() {
       <section className="bg-muted/50 py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">How to Get Here</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Sådan kommer du herhen</h2>
             <p className="text-lg text-muted-foreground">
-              Easy to reach by public transport or bike
+              Let at komme til med offentlig transport eller cykel
             </p>
           </div>
 
@@ -80,16 +80,16 @@ export function Map() {
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Train className="w-5 h-5 text-primary" />
                   </div>
-                  <CardTitle>Metro & S-Train</CardTitle>
+                  <CardTitle>Metro & S-Toget</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
-                  <strong className="text-foreground block mb-2">Nørrebro Station (5 min walk)</strong>
+                  <strong className="text-foreground block mb-2">Nørreport Station (5 min gåtur)</strong>
                   Lines: S-train (A, B, C, E, H)
                   <br />
                   <br />
-                  <strong className="text-foreground block mb-2">Nørreport Station (10 min walk)</strong>
+                  <strong className="text-foreground block mb-2">Nørreport Station (5 min gåtur)</strong>
                   Lines: Metro M1, M2 + S-trains
                 </CardDescription>
               </CardContent>
@@ -106,12 +106,9 @@ export function Map() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
-                  <strong className="text-foreground block mb-2">Nearest stops:</strong>
-                  Nørrebrogade (Lines 5A, 350S)
+                  <strong className="text-foreground block mb-2">Nærmeste stoppested:</strong>
+                  Nørre Voldgade  (Linje 5A, 350S)
                   <br />
-                  <br />
-                  <strong className="text-foreground block mb-2">Alternative:</strong>
-                  Nørrebros Runddel (Line 3A)
                 </CardDescription>
               </CardContent>
             </Card>
@@ -122,17 +119,14 @@ export function Map() {
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Bike className="w-5 h-5 text-primary" />
                   </div>
-                  <CardTitle>Bike</CardTitle>
+                  <CardTitle>Cykler</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
-                  <strong className="text-foreground block mb-2">Bike parking available</strong>
-                  Racks directly in front of the café
+                  <strong className="text-foreground block mb-2">Cykel parkering tilgængelig</strong>
+                  Cykelstativ lige på den anden side af vejen
                   <br />
-                  <br />
-                  <strong className="text-foreground block mb-2">Bike-friendly route</strong>
-                  Direct access via Nørrebrogade bike lane
                 </CardDescription>
               </CardContent>
             </Card>
@@ -143,38 +137,38 @@ export function Map() {
       {/* Parking */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl mb-8 text-center text-foreground">Parking Information</h2>
+          <h2 className="text-3xl md:text-4xl mb-8 text-center text-foreground">Parkering</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🚗 Street Parking</CardTitle>
+                <CardTitle className="text-lg">🚗 Gade parkering</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Limited paid street parking available on Nørrebrogade and surrounding streets.
+                  Begrænset betalt parkering på Nørre Voldgade og omkringliggende gader ellers anbefaler vi parkeringkælderen under Israels Plads.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  <strong>Cost:</strong> ~20 DKK/hour (varies by zone)
+                  <strong>Pris:</strong> ~44 DKK/time (varierer efter zone)
                   <br />
-                  <strong>Payment:</strong> EasyPark app or parking meters
+                  <strong>Betaling:</strong> EasyPark app eller parkeringsautomater
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">🅿️ Public Parking</CardTitle>
+                <CardTitle className="text-lg">🅿️ Offentlig parkering</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Nearest public parking garage:
+                  Nærmeste offentlige parkeringskælder:
                 </p>
                 <p className="text-sm text-muted-foreground">
                   <strong>Q-Park Nørreport</strong>
                   <br />
                   Frederiksborggade 11
                   <br />
-                  10 minutes walk from café
+                  5 minutters gang fra caféen
                 </p>
               </CardContent>
             </Card>
@@ -183,7 +177,7 @@ export function Map() {
           <Card className="mt-6 bg-accent/10 border-2 border-accent/30">
             <CardContent className="pt-6">
               <p className="text-sm text-muted-foreground text-center">
-                💡 <strong>Tip:</strong> We recommend using public transport or bike when visiting Copenhagen. It's faster, cheaper, and more environmentally friendly!
+                💡 <strong>Tip:</strong> Vi anbefaler at bruge offentlig transport eller cykel når du besøger København. Det er hurtigere, billigere og mere miljøvenligt!
               </p>
             </CardContent>
           </Card>
@@ -194,27 +188,27 @@ export function Map() {
       <section className="bg-muted/50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl mb-8 text-foreground">Nearby Landmarks</h2>
+            <h2 className="text-3xl md:text-4xl mb-8 text-foreground">Nærliggende restauranter</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
               <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🌳</div>
-                <div className="font-medium">Assistens Cemetery</div>
-                <div className="text-muted-foreground text-xs">5 min walk</div>
-              </div>
-              <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🍺</div>
-                <div className="font-medium">Mikkeller Bar</div>
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Cocks and Cows</div>
                 <div className="text-muted-foreground text-xs">3 min walk</div>
               </div>
               <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🏛️</div>
-                <div className="font-medium">The Lakes</div>
-                <div className="text-muted-foreground text-xs">10 min walk</div>
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Restaurant Dan´sk</div>
+                <div className="text-muted-foreground text-xs">1 min walk</div>
               </div>
               <div className="p-4 bg-card rounded-lg border">
-                <div className="text-2xl mb-2">🎭</div>
-                <div className="font-medium">Nørrebro Theatre</div>
-                <div className="text-muted-foreground text-xs">7 min walk</div>
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Cafe Venner</div>
+                <div className="text-muted-foreground text-xs">3 min walk</div>
+              </div>
+              <div className="p-4 bg-card rounded-lg border">
+                <div className="text-2xl mb-2"></div>
+                <div className="font-medium">Restaurant Vækst</div>
+                <div className="text-muted-foreground text-xs">5 min walk</div>
               </div>
             </div>
           </div>
@@ -224,13 +218,13 @@ export function Map() {
       {/* CTA */}
       <section className="container mx-auto px-4 py-16">
         <div className="bg-gradient-to-r from-primary to-accent rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl mb-4">See You Soon!</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Vi ses snart!</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Now that you know where to find us, book your table and come play!
+            Nu ved du, hvor du finder os, book dit bord og kom og spil!
           </p>
           <Link to="/book">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book a Table
+              Book et bord
             </Button>
           </Link>
         </div>
