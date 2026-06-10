@@ -28,11 +28,7 @@ export function Layout() {
         { label: "Drikkevarer & Snacks", path: "/prices/drinks" },
       ],
     },
-    {
-      label: "Åbningstider",
-      path: "/opening-hours",
-      children: [{ label: "Åbningstider", path: "/opening-hours/map" }],
-    },
+    { label: "Åbningstider", path: "/opening-hours" },
     {
       label: "Om os",
       path: "/about",
