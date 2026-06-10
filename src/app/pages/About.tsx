@@ -57,9 +57,10 @@ export function About() {
                 </p>
                 <p>
                   Hvad der startede som en escape room virksomhed er siden vokset med oplevelser, og nu bringer vi brætspils cafeen til menuen. Vi tilbyder over 100 spil og månedlige events.
-                  <p>
-                    Vores mission er enkel: at sprede glæden ved at spille spil og skabe et hyggeligt rum hvor venskaber bliver dannet, historier bliver fortalt og minder bliver skabt rundt om spillebordet.
-                  </p>
+                </p>
+                <p>
+                  Vores mission er enkel: at sprede glæden ved at spille spil og skabe et hyggeligt rum hvor venskaber bliver dannet, historier bliver fortalt og minder bliver skabt rundt om spillebordet.
+                </p>
               </div>
             </div>
             <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
