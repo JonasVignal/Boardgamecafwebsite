@@ -26,7 +26,7 @@ export function OpeningHours() {
             <div className="text-6xl mb-6">🕐</div>
             <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Åbningstider</h1>
             <p className="text-lg text-muted-foreground">
-              Kom og besøg os eller book din bord i forvejen
+              Kom og besøg os eller book dit bord i forvejen
             </p>
           </div>
         </div>
@@ -198,7 +198,7 @@ export function OpeningHours() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <Card>
               <CardHeader>
                 <div className="text-4xl mb-2">🎲</div>
@@ -212,18 +212,7 @@ export function OpeningHours() {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <div className="text-4xl mb-2">⚔️</div>
-                <CardTitle>D&D One-Shots</CardTitle>
-                <CardDescription>Hver lørdag 14:00</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Prøv D&D for en aften - nemt at komme i gang og sjovt for alle!
-                </p>
-              </CardContent>
-            </Card>
+
 
             <Card>
               <CardHeader>
