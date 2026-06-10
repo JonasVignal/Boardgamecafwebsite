@@ -79,7 +79,7 @@ export function About() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Vores værdier</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Hvad der driver os hver dag i Brætspils Café
+              Hvad der driver os hver dag i Brætspils Caféen.
             </p>
           </div>
 
