@@ -28,23 +28,7 @@ export function About() {
     },
   ];
 
-  const team = [
-    {
-      name: "Lars Nielsen",
-      role: "Founder & Game Master",
-      description: "20+ years of gaming experience and D&D enthusiast",
-    },
-    {
-      name: "Emma Andersen",
-      role: "Head of Events",
-      description: "Tournament organizer and board game expert",
-    },
-    {
-      name: "Oliver Jensen",
-      role: "VR Specialist",
-      description: "Tech wizard and VR experience designer",
-    },
-  ];
+
 
   return (
     <div>
@@ -53,9 +37,9 @@ export function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-6xl mb-6">🎲❤️</div>
-            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">About Us</h1>
+            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Om os</h1>
             <p className="text-lg text-muted-foreground">
-              More than just a café - we're a community of gamers, dreamers, and adventurers
+              Mere end bare en café - vi er et fællesskab af gamere, drømmere og eventyrere
             </p>
           </div>
         </div>
@@ -66,16 +50,16 @@ export function About() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl mb-6 text-foreground">Our Story</h2>
+              <h2 className="text-3xl md:text-4xl mb-6 text-foreground">Vores Historie</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Copenhagen Game Café was founded in 2018 by a group of passionate board game enthusiasts who wanted to create a space where people could come together, disconnect from the digital world, and enjoy the magic of tabletop gaming.
+                  Brætspils Café startede d. 1. Juli 2026 af en gruppe passionerede Brætspil Entusiaster der ønskede at skabe et sted hvor folk kunne mødes, slukke fra den digitale verden og nyde magien af brætspil.
                 </p>
                 <p>
-                  What started as a small café with 50 games has grown into Copenhagen's premier destination for board games, D&D, and immersive VR experiences. We now host over 500 games and welcome thousands of visitors each month.
+                  Hvad der startede som en lille café med 50 spil er vokset til Københavns førende destination for brætspil, D&D og fordybende VR-oplevelser. Vi tilbyder nu over 500 spil og byder tusindvis af besøgende velkommen hver måned.
                 </p>
                 <p>
-                  Our mission is simple: to spread the joy of gaming and create a welcoming space where friendships are forged, stories are told, and memories are made around the gaming table.
+                  Vores mission er enkel: at sprede glæden ved at spille spil og skabe et hyggeligt rum hvor venskaber bliver dannet, historier bliver fortalt og minder bliver skabt rundt om spillebordet.
                 </p>
               </div>
             </div>
@@ -94,9 +78,9 @@ export function About() {
       <section className="bg-muted/50 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Our Values</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Vores værdier</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              What drives us every day at Copenhagen Game Café
+              Hvad der driver os hver dag i Brætspils Café
             </p>
           </div>
 
@@ -125,9 +109,9 @@ export function About() {
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">The Space</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Caféen</h2>
             <p className="text-lg text-muted-foreground">
-              A cozy and welcoming environment designed for gaming
+              Hyggelig stemning med plads til alle
             </p>
           </div>
 
@@ -139,38 +123,28 @@ export function About() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-                <h3 className="text-white text-xl">Main Gaming Area</h3>
-                <p className="text-white/80 text-sm">Comfortable tables for all group sizes</p>
+                <h3 className="text-white text-xl"></h3>
+                <p className="text-white/80 text-sm"></p>
               </div>
             </div>
 
-            <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1696197819150-9645c9256577?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkdW5nZW9ucyUyMGRyYWdvbnMlMjB0YWJsZXRvcCUyMGdhbWluZ3xlbnwxfHx8fDE3NzM0OTYwMjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="D&D room"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-                <h3 className="text-white text-xl">D&D Private Rooms</h3>
-                <p className="text-white/80 text-sm">Dedicated spaces for campaigns</p>
-              </div>
-            </div>
+
           </div>
 
           <Card className="border-2">
             <CardContent className="pt-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-4xl mb-2">500+</div>
-                  <p className="text-muted-foreground">Board Games</p>
+                  <div className="text-4xl mb-2">100+</div>
+                  <p className="text-muted-foreground">Brætspil</p>
                 </div>
                 <div>
-                  <div className="text-4xl mb-2">150m²</div>
-                  <p className="text-muted-foreground">Gaming Space</p>
+                  <div className="text-4xl mb-2">80m²</div>
+                  <p className="text-muted-foreground">Stedet</p>
                 </div>
                 <div>
-                  <div className="text-4xl mb-2">50</div>
-                  <p className="text-muted-foreground">Seats</p>
+                  <div className="text-4xl mb-2">40</div>
+                  <p className="text-muted-foreground">Pladser</p>
                 </div>
               </div>
             </CardContent>
