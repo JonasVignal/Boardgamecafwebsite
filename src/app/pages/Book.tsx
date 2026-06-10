@@ -11,7 +11,7 @@ export function Book() {
             <div className="text-6xl mb-6"></div>
             <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Book et bord</h1>
             <p className="text-lg text-muted-foreground">
-              Book din plads på Copenhagen Game Café. Klik på knappen nedenfor for at blive omdirigeret til vores bookingsystem.
+              Book jeres bord herunder. Alle reservationer er 3 timer.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export function Book() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Selvom vi anbefaler at booke i forvejen, tager vi også imod walk-ins baseret på tilgængelighed. Højsæsonen er fredag-søndag aftener.
+                  Selvom vi anbefaler at booke i forvejen, tager vi også imod walk-ins baseret på tilgængelighed.
                 </p>
               </CardContent>
             </Card>
@@ -53,7 +53,7 @@ export function Book() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Afmeld venligst senest 24 timer i forvejen, hvis du ønsker at aflyse eller ændre din booking via bookingsystemet.
+                  Afmeld venligst senest 48 timer i forvejen, hvis du ønsker at aflyse eller ændre din booking via bookingsystemet.
                 </p>
               </CardContent>
             </Card>
@@ -74,9 +74,9 @@ export function Book() {
                 📞 Ring til os: +45 92 90 91 91
               </Button>
             </a>
-            <a href="mailto:[EMAIL_ADDRESS]">
+            <a href="mailto:info@brætspilscafe.dk">
               <Button variant="outline" size="lg">
-                📧 Email: [EMAIL_ADDRESS]
+                📧 Email: info@brætspilscafe.dk
               </Button>
             </a>
           </div>
