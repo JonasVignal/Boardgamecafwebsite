@@ -7,52 +7,76 @@ import { ImageWithFallback } from "../components/common/ImageWithFallback";
 export function History() {
   const timeline = [
     {
-      year: "2018",
+      year: "2014",
       title: "Starten",
-      description: "Copenhagen Game Café blev grundlagt af en gruppe passionerede brætspilsentusiaster, der ønskede at skabe et rum, hvor folk kunne mødes og nyde magien ved bordspil.",
-      icon: "🎲"
+      description: "Operatøren i Tårnet står klar på Refshaleøen",
+      icon: ""
+    },
+    {
+      year: "2015",
+      title: "Ekspansion",
+      description: "Lokalerne på Nørre Farimagsgade 7 lejes, The Psychotic Janitor, The Terrorist Cell og The Solitary Munk åbner",
+      icon: ""
+    },
+    {
+      year: "2016",
+      title: "Ny Lokation lejes",
+      description: "Lokalerne på Nørre Voldgade 18 lejes",
+      icon: ""
+    },
+    {
+      year: "2017",
+      title: "VR Introduktion",
+      description: "Vi tilføjede VR-oplevelser til vores tilbud, Startenede med Cosmos, Danmarks første VR Team Escape Room",
+      icon: ""
+    },
+    {
+      year: "2017",
+      title: "Fællesskabsvækst",
+      description: "Vikings og Enter the Mind åbner, Vores første dobbeltspil",
+      icon: ""
+    },
+    {
+      year: "2018",
+      title: "Teambuilding",
+      description: "Stop The Bomb, VR Teambuilding udbydes til kunderne, hvor samarbejde er i højsædet",
+      icon: ""
     },
     {
       year: "2019",
-      title: "Ekspansion",
-      description: "Vi udvidede vores samling til 200 spil og tilføjede vores første private D&D rum. Vores fællesskab voksede hurtigt!",
-      icon: "📈"
+      title: "Morderjagt & VR",
+      description: "Herredfodgen på Frilandsmuseet, Dr. Evils Plan og Ny VR spil ser dagens lys",
+      icon: ""
     },
     {
       year: "2020",
-      title: "Digital Tilpasning",
-      description: "Under pandemien tilbød vi online spilaftener og virtuelle D&D sessioner for at holde vores fællesskab forbundet.",
-      icon: "💻"
+      title: "Nye spil og Covid-19",
+      description: "The Rouge general åbner og Print+klip escape spil introduceres under Covid-19",
+      icon: ""
     },
     {
       year: "2021",
-      title: "VR Introduktion",
-      description: "Vi tilføjede VR-oplevelser til vores tilbud, startende med 'Stop the Bomb' - en øjeblikkelig succes!",
-      icon: "🥽"
+      title: "Videreudvikling af Konceptet",
+      description: "Rum to af The Psychotic Janitor og The Terrorist Cell åbner",
+      icon: ""
     },
     {
       year: "2022",
-      title: "Fællesskabsvækst",
-      description: "Vi nåede 10.000 besøgende og blev anerkendt som Københavns bedste spilcafé. Ugentlige turneringer og events blev standard.",
-      icon: "🏆"
+      title: "Gådejagt",
+      description: "Stormen 1659 åbner, en historisk gådejagt igennem indre København",
+      icon: ""
     },
     {
       year: "2023",
-      title: "Renovering",
-      description: "Komplet renovering af caféen med nye borde, forbedret belysning og udvidet café-område. Vores samling voksede til 100+ spil.",
-      icon: "✨"
-    },
-    {
-      year: "2024",
-      title: "Professional D&D",
-      description: "Vi ansatte professionelle Dungeon Masters og lancerede vores populære kampagne-program.",
-      icon: "⚔️"
+      title: "Cyber Security",
+      description: "Hacked! har premiere både som Escape Room og som mobilt escape room",
+      icon: ""
     },
     {
       year: "2026",
-      title: "I dag",
-      description: "Vi fortsætter med at vokse og servicere vores fantastiske fællesskab med de bedste spil, oplevelser og hygge i København!",
-      icon: "🎉"
+      title: "Bræt spil",
+      description: "Brætspils Caféen åbner med over 100 forskellige spil til at spille i caféen.",
+      icon: ""
     }
   ];
 
@@ -72,10 +96,10 @@ export function History() {
       <section className="bg-gradient-to-br from-primary/20 via-secondary/30 to-accent/20 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl mb-6">📖</div>
+            <div className="text-6xl mb-6"></div>
             <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Vores Historie</h1>
             <p className="text-lg text-muted-foreground">
-              Rejsen fra en lille café med 50 spil til Københavns førende spildestination
+              Rejsen fra et escape room til 11 escape room og en hyggelig spilbræts cafe.
             </p>
           </div>
         </div>
@@ -89,13 +113,13 @@ export function History() {
               <h2 className="text-3xl md:text-4xl mb-6 text-foreground">Begyndelsen</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I 2018 havde en gruppe venner en drøm: at skabe et sted hvor folk kunne mødes, afbryde fra den digitale verden og nyde magien ved bordspil sammen.
+                  I 2014 havde en gruppe venner en drøm: at skabe et sted hvor folk kunne mødes, afbryde fra den digitale verden og nyde magien med spil og leg sammen.
                 </p>
                 <p>
-                  Det startede som en lille café på Nørrebro med bare 50 spil og et par borde. Men kærligheden til spil og fællesskabet der opstod omkring dem var umiddelbar.
+                  Det startede som et escape room i det optiske tårn på Rejshaleøen. Men kærligheden til spil og fællesskabet der opstod omkring dem var umiddelbar.
                 </p>
                 <p>
-                  Hvad der gjorde os anderledes var ikke bare spillene - det var atmosfæren. Vi ønskede at skabe et sted hvor alle følte sig velkomne, uanset om de var erfarne gamers eller helt nye til bordspil.
+                  Hvad der gjorde os anderledes var ikke bare spillene - det var atmosfæren. Vi ønskede at skabe et sted hvor alle følte sig velkomne, uanset om de var erfarne gamers eller helt nye til spillere.
                 </p>
               </div>
             </div>
@@ -116,7 +140,7 @@ export function History() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Vores Rejse</h2>
             <p className="text-lg text-muted-foreground">
-              Fra 2018 til i dag - milepæle der formede vores café
+              Fra 2014 til i dag - milepæle der formede os
             </p>
           </div>
 
