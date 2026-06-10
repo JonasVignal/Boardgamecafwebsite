@@ -8,23 +8,23 @@ export function About() {
   const values = [
     {
       icon: Heart,
-      title: "Community First",
-      description: "We believe in bringing people together through the joy of gaming",
+      title: "Fællesskabet først",
+      description: "Vi tror på at bringe mennesker sammen gennem glæden ved at spille spil",
     },
     {
       icon: Users,
-      title: "Inclusive Space",
-      description: "Everyone is welcome, from beginners to seasoned gamers",
+      title: "Et sted for alle",
+      description: "Alle er velkomne, fra begyndere til erfarne spillere",
     },
     {
       icon: Trophy,
-      title: "Quality Selection",
-      description: "Carefully curated collection of the best board games",
+      title: "Kvalitets udvalg",
+      description: "Kurateret udvalg af de bedste brætspil",
     },
     {
       icon: Sparkles,
-      title: "Memorable Experiences",
-      description: "Creating lasting memories through play and connection",
+      title: "Oplevelser for livet",
+      description: "Skaber varige minder gennem leg og fællesskab",
     },
   ];
 
