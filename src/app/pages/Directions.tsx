@@ -33,7 +33,7 @@ export function Directions() {
           <Card className="overflow-hidden border-2 mb-12">
             <CardContent className="p-0">
               {/* Embedded Map Placeholder */}
-              <div className="relative w-full h-96 md:h-[600px] bg-muted flex items-center justify-center">
+              <div className="relative w-full h-96 md:h-[600px] bg-muted flex items-center justify-end pr-4 md:pr-16">
                 <div className="absolute inset-0 w-full h-full">
                   <iframe
                     width="100%"
@@ -61,7 +61,7 @@ export function Directions() {
                       <Button className="w-full">Åbn i Google Maps</Button>
                     </a>
                     <a
-                      href="maps.apple.com/place?address=N%C3%B8rre+Voldgade+18%2C+1358+K%C3%B8benhavn+K%2C+Danmark&coordinate=55.679816%2C12.567435&name=N%C3%B8rre+Voldgade+18"
+                      href="https://maps.apple.com/place?address=N%C3%B8rre+Voldgade+18%2C+1358+K%C3%B8benhavn+K%2C+Danmark&coordinate=55.679816%2C12.567435&name=N%C3%B8rre+Voldgade+18"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
