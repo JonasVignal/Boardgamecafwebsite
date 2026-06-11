@@ -81,7 +81,7 @@ export function Directions() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Sådan kommer du hertil</h2>
             <p className="text-lg text-muted-foreground">
-              Nem at nå med offentlig transport eller cykel
+              Nemt at nå med offentlig transport eller cykel
             </p>
           </div>
 
