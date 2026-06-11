@@ -71,7 +71,7 @@ export function Book() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+4592909191">
               <Button variant="outline" size="lg">
-                📞 Ring til os: +45 92 90 91 91
+                📞 Ring til os: +45 42 90 91 91
               </Button>
             </a>
             <a href="mailto:info@brætspilscafe.dk">
