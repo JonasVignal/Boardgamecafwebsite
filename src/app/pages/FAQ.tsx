@@ -47,9 +47,10 @@ export function FAQ() {
         }
       ]
     },
+    /*
     {
-/*category: "D&D Sessions",
- //     questions: [
+      category: "D&D Sessions",
+      questions: [
         {
           q: "Har jeg brug for erfaring for at spille D&D?",
           a: "Slet ikke! Vores Dungeon Masters er erfarne med at undervise nye spillere. Vi anbefaler at starte med en one-shot for at lære det grundlæggende."
