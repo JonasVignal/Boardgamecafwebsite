@@ -94,20 +94,16 @@ export function FAQ() {
       category: "Mad & Drikke",
       questions: [
         {
-          q: "Serverer I mad?",
-          a: "Ja, vi har sandwiches, snacks, kage og andet. Fuld menu er tilgængelig på vores Drikkevarer & Snacks side."
+          q: "Serverer I snacks?",
+          a: "Ja, vi har chips og nøddemix. Fuld menu er tilgængelig på vores Drikkevarer & Snacks side."
         },
         {
           q: "Må jeg medbringe min egen mad?",
-          a: "Vi foretrækker at du køber fra vores menu, men du er velkommen til at medbringe snacks. Ingen eksternt tilberedt mad, tak."
-        },
-        {
-          q: "Har I vegetariske/veganske muligheder?",
-          a: "Ja! Vi har flere vegetariske og veganske muligheder. Bed om vores specielle menu."
+          a: "Nej, desværre!"
         },
         {
           q: "Serverer I alkohol?",
-          a: "Ja, vi serverer øl, vin og cider. Du skal være 18+ for at købe alkohol."
+          a: "Ja, vi serverer forskellige typer øl. Du skal være 18+ for at købe alkohol."
         }
       ]
     },
@@ -116,11 +112,11 @@ export function FAQ() {
       questions: [
         {
           q: "Kan jeg booke til en fødselsdag?",
-          a: "Ja! Vi tilbyder særlige fødselsdagspakker med privat rum, dekorationer og kage. Kontakt os for detaljer."
+          a: "Ja! Vi tilbyder særlige fødselsdagspakker med flag og god stemning. Kontakt os for detaljer."
         },
         {
           q: "Tilbyder I firmaarrangementer?",
-          a: "Ja! Brætspil og D&D er fantastiske teambuilding-aktiviteter. Vi kan arrangere private sessioner for dit team."
+          a: "Ja! Brætspil og VR er fantastiske teambuilding-aktiviteter. Vi kan arrangere private sessioner for dit team."
         },
         {
           q: "Hvor mange mennesker kan I tage?",
@@ -192,12 +188,12 @@ export function FAQ() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+4512345678">
               <Button variant="outline" size="lg">
-                📞 Ring: +45 12 34 56 78
+                📞 Ring: +45 42 90 91 91
               </Button>
             </a>
-            <a href="mailto:hello@gamecafe.dk">
+            <a href="mailto:info@brætspilscafe.dk">
               <Button variant="outline" size="lg">
-                📧 Email: hello@gamecafe.dk
+                📧 Email: info@brætspilscafe.dk
               </Button>
             </a>
           </div>
@@ -209,7 +205,7 @@ export function FAQ() {
         <div className="bg-gradient-to-r from-primary to-accent rounded-2xl p-12 text-center text-white">
           <h2 className="text-3xl md:text-4xl mb-4">Klar til at spille?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Book dit bord nu og kom og oplev det bedste af brætspil, D&D og VR!
+            Book dit bord nu og kom og oplev det bedste af brætspil, VR og hygge!
           </p>
           <Link to="/book">
             <Button size="lg" variant="secondary" className="text-lg px-8">
