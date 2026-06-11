@@ -187,7 +187,7 @@ export function FAQ() {
             Hvis du ikke kan finde svaret du leder efter, er du velkommen til at kontakte os direkte!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+4512345678">
+            <a href="tel:+4542909191">
               <Button variant="outline" size="lg">
                 📞 Ring: +45 42 90 91 91
               </Button>
