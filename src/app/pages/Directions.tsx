@@ -35,9 +35,9 @@ export function Directions() {
               {/* Embedded Map Placeholder */}
               <div className="relative w-full h-96 md:h-[600px] bg-muted flex items-center justify-center">
                 <div className="absolute inset-0 w-full h-full">
-                  <iframe 
-                    width="100%" 
-                    height="100%" 
+                  <iframe
+                    width="100%"
+                    height="100%"
                     style={{ border: 0 }}
                     src="https://maps.google.com/maps?width=100%25&height=600&hl=da&q=N%C3%B8rre%20Voldgade%2018,%201358%20K%C3%B8benhavn%20K+(Br%C3%A6tspils%20Caf%C3%A9)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
                     allowFullScreen
@@ -61,7 +61,7 @@ export function Directions() {
                       <Button className="w-full">Åbn i Google Maps</Button>
                     </a>
                     <a
-                      href="https://maps.apple.com/place?address=N%C3%B8rre+Voldgade+18%2C+1358+K%C3%B8benhavn+K%2C+Danmark&coordinate=55.679816%2C12.567435&name=N%C3%B8rre+Voldgade+18"
+                      href="maps.apple.com/place?address=N%C3%B8rre+Voldgade+18%2C+1358+K%C3%B8benhavn+K%2C+Danmark&coordinate=55.679816%2C12.567435&name=N%C3%B8rre+Voldgade+18"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
