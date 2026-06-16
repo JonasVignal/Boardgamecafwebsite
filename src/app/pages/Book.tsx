@@ -74,9 +74,9 @@ export function Book() {
                 📞 Ring til os: +45 42 90 91 91
               </Button>
             </a>
-            <a href="mailto:info@brætspilscafe.dk">
+            <a href="mailto:info@boardgamecafe.dk">
               <Button variant="outline" size="lg">
-                📧 Email: info@brætspilscafe.dk
+                📧 Email: info@boardgamecafe.dk
               </Button>
             </a>
           </div>

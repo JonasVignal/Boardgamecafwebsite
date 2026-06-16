@@ -8,19 +8,19 @@ export function Prices() {
     {
       name: "Hverdage",
       time: "Mandag - Torsdag",
-      price: "50 DKK/person",
+      price: "80 DKK/person",
       description: "Hele dagen adgang til vores brætspilsbiblioteket",
     },
     {
       name: "Weekender",
       time: "Fredag - Søndag",
-      price: "75 DKK/person",
+      price: "80 DKK/person",
       description: "Hele dagen adgang til vores brætspilsbiblioteket",
     },
     {
       name: "Studierabat",
       time: "Alle dage (med gyldigt ID)",
-      price: "40 DKK/person",
+      price: "70 DKK/person",
       description: "Specialpris for studerende",
     },
   ];
@@ -28,10 +28,10 @@ export function Prices() {
   const packages = [
     {
       title: "Brætspil",
-      price: "50-75 DKK",
+      price: "80 DKK",
       period: "per person",
       features: [
-        "Adgang til 1000+ brætspil",
+        "Adgang til 100+ brætspil",
         "Hele dagen adgang",
         "Anbefalinger fra personalet",
         "Reglerne forklaret til spillet",

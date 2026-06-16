@@ -8,7 +8,7 @@ export function TableRates() {
     {
       name: "Hverdag",
       time: "Mandag - Torsdag",
-      price: "50 DKK",
+      price: "80 DKK",
       priceUnit: "pr. person",
       description: "Hele dagen adgang til vores brætspilsbibliotek",
       features: [
@@ -22,7 +22,7 @@ export function TableRates() {
     {
       name: "Weekend",
       time: "Fredag - Søndag",
-      price: "75 DKK",
+      price: "80 DKK",
       priceUnit: "pr. person",
       description: "Hele dagen adgang til vores brætspilsbibliotek",
       features: [
@@ -38,7 +38,7 @@ export function TableRates() {
     {
       name: "Studerende",
       time: "Alle dage (med gyldigt ID)",
-      price: "40 DKK",
+      price: "70 DKK",
       priceUnit: "pr. person",
       description: "Særlig pris for studerende",
       features: [
