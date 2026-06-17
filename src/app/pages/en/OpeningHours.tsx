@@ -1,17 +1,17 @@
 import { Link } from "react-router";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
-import { Button } from "../components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
+import { Button } from "../../components/ui/button";
 import { Clock, MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 
 export function OpeningHours() {
   const hours = [
-    { day: "Mandag", time: "10:00 - 22:00" },
-    { day: "Tirsdag", time: "10:00 - 22:00" },
-    { day: "Onsdag", time: "10:00 - 22:00" },
-    { day: "Torsdag", time: "10:00 - 22:00" },
-    { day: "Fredag", time: "10:00 - 22:00" },
-    { day: "Lørdag", time: "10:00 - 22:00" },
-    { day: "Søndag", time: "10:00 - 22:00" },
+    { day: "Monday", time: "10:00 - 22:00" },
+    { day: "Tuesday", time: "10:00 - 22:00" },
+    { day: "Wednesday", time: "10:00 - 22:00" },
+    { day: "Thursday", time: "10:00 - 22:00" },
+    { day: "Friday", time: "10:00 - 22:00" },
+    { day: "Saturday", time: "10:00 - 22:00" },
+    { day: "Sunday", time: "10:00 - 22:00" },
   ];
 
   const today = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
@@ -24,9 +24,9 @@ export function OpeningHours() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-6xl mb-6"></div>
-            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Åbningstider</h1>
+            <h1 className="text-4xl md:text-5xl mb-6 text-foreground">Opening Hours</h1>
             <p className="text-lg text-muted-foreground">
-              Kom og besøg os eller book dit bord i forvejen
+              Come visit us or book your table in advance
             </p>
           </div>
         </div>
@@ -38,9 +38,9 @@ export function OpeningHours() {
           {/* Opening Hours */}
           <div>
             <div className="mb-8">
-              <h2 className="text-3xl mb-2 text-foreground">Åbningstider</h2>
+              <h2 className="text-3xl mb-2 text-foreground">Opening Hours</h2>
               <p className="text-muted-foreground">
-                Vi er åben alle ugens dage for jeres spilleglæde. Drop ind eller book bord i forvejen
+                We're open every day of the week for your gaming pleasure. Drop in or book a table in advance
               </p>
             </div>
             <Card className="border-2">
@@ -66,7 +66,7 @@ export function OpeningHours() {
                         </span>
                         {index === todayIndex && (
                           <span className="text-xs bg-primary text-white px-2 py-0.5 rounded-full">
-                            I dag
+                            Today
                           </span>
                         )}
                       </div>
@@ -80,7 +80,7 @@ export function OpeningHours() {
             <Card className="mt-6 bg-accent/10 border-2 border-accent/30">
               <CardContent className="pt-6">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Vær venligst opmærksom på:</strong> Sidste udkald er 1 time før lukketid. Vi kan lukke tidligt på helligdage - tjek venligst vores sociale medier eller ring i forvejen.
+                  <strong className="text-foreground">Please note:</strong> Last call is 1 hour before closing. We may close early on public holidays - please check our social media or call ahead.
                 </p>
               </CardContent>
             </Card>
@@ -89,8 +89,8 @@ export function OpeningHours() {
           {/* Contact Information */}
           <div>
             <div className="mb-8">
-              <h2 className="text-3xl mb-2 text-foreground">Kontakt os</h2>
-              <p className="text-muted-foreground">Få fat på os eller besøg os</p>
+              <h2 className="text-3xl mb-2 text-foreground">Contact Us</h2>
+              <p className="text-muted-foreground">Get in touch or visit us</p>
             </div>
 
             <div className="space-y-4">
@@ -101,8 +101,8 @@ export function OpeningHours() {
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <CardTitle>Adresse</CardTitle>
-                      <CardDescription>Besøg os i København</CardDescription>
+                      <CardTitle>Address</CardTitle>
+                      <CardDescription>Visit us in Copenhagen</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -110,13 +110,13 @@ export function OpeningHours() {
                   <p className="text-muted-foreground mb-3">
                     Nørre Voldgade 18
                     <br />
-                    1358 København K
+                    1358 Copenhagen K
                     <br />
-                    Danmark
+                    Denmark
                   </p>
-                  <Link to="/opening-hours/map">
+                  <Link to="/en/opening-hours/map">
                     <Button variant="outline" className="group">
-                      Vis kort
+                      Show map
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -130,8 +130,8 @@ export function OpeningHours() {
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <CardTitle>Telefon</CardTitle>
-                      <CardDescription>Ring til os</CardDescription>
+                      <CardTitle>Phone</CardTitle>
+                      <CardDescription>Call us</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -150,7 +150,7 @@ export function OpeningHours() {
                     </div>
                     <div>
                       <CardTitle>Email</CardTitle>
-                      <CardDescription>Send os en besked</CardDescription>
+                      <CardDescription>Send us a message</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -171,8 +171,8 @@ export function OpeningHours() {
                       <span className="text-xl">💬</span>
                     </div>
                     <div>
-                      <CardTitle>Sociale Medier</CardTitle>
-                      <CardDescription>Følg os for at holde dig opdateret</CardDescription>
+                      <CardTitle>Social Media</CardTitle>
+                      <CardDescription>Follow us to stay updated</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -192,9 +192,9 @@ export function OpeningHours() {
       <section className="bg-muted/50 py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Ugentlige Events</h2>
+            <h2 className="text-3xl md:text-4xl mb-4 text-foreground">Weekly Events</h2>
             <p className="text-lg text-muted-foreground">
-              Deltag i vores specielle events i løbet af ugen
+              Join our special events throughout the week
             </p>
           </div>
 
@@ -202,12 +202,12 @@ export function OpeningHours() {
             <Card>
               <CardHeader>
                 <div className="text-4xl mb-2">🎲</div>
-                <CardTitle>Spilaften</CardTitle>
-                <CardDescription>Hver onsdag 19:00</CardDescription>
+                <CardTitle>Game Night</CardTitle>
+                <CardDescription>Every Wednesday at 19:00</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Mød andre spillere og opdag nye brætspil sammen
+                  Meet other players and discover new board games together
                 </p>
               </CardContent>
             </Card>
@@ -217,12 +217,12 @@ export function OpeningHours() {
             <Card>
               <CardHeader>
                 <div className="text-4xl mb-2">🏆</div>
-                <CardTitle>Brætspilstuneringer</CardTitle>
-                <CardDescription>Sidste søndag i måneden</CardDescription>
+                <CardTitle>Board Game Tournaments</CardTitle>
+                <CardDescription>Last Sunday of the month</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Afprøv dine evner i spændende turneringer med fede præmier! Følg med på vores sociale medier for at se hvilke spil vi spiller.
+                  Test your skills in exciting tournaments with great prizes! Follow our social media to see which games we're playing.
                 </p>
               </CardContent>
             </Card>
@@ -233,13 +233,13 @@ export function OpeningHours() {
       {/* CTA */}
       <section className="container mx-auto px-4 py-16">
         <div className="bg-gradient-to-r from-primary to-accent rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl md:text-4xl mb-4">Besøg os i dag!</h2>
+          <h2 className="text-3xl md:text-4xl mb-4">Visit us today!</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Walk-ins er velkomne, men vi anbefaler at booke bord i travle perioder og weekender.
+            Walk-ins are welcome, but we recommend booking a table during busy periods and weekends.
           </p>
-          <Link to="/book">
+          <Link to="/en/book">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book et bord
+              Book a table
             </Button>
           </Link>
         </div>

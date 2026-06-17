@@ -3,42 +3,55 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { ScrollToTop } from "./ScrollToTop";
+import { LanguageToggle } from "./LanguageToggle";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const isEnglish = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  const prefix = isEnglish ? "/en" : "";
 
-  const navItems = [
-    { label: "Home", path: "/" },
+  const navConfig = [
+    { da: "Home", en: "Home", segment: "" },
     {
-      label: "Brætspil",
-      path: "/board-games",
+      da: "Brætspil",
+      en: "Board Games",
+      segment: "board-games",
       children: [
-        { label: "Kategorier", path: "/board-games/categories" },
+        { da: "Kategorier", en: "Categories", segment: "board-games/categories" },
       ],
     },
-
-    { label: "VR - Stop the Bomb", path: "/vr" },
+    { da: "VR - Stop the Bomb", en: "VR - Stop the Bomb", segment: "vr" },
     {
-      label: "Priser",
-      path: "/prices",
+      da: "Priser",
+      en: "Prices",
+      segment: "prices",
       children: [
-        { label: "Spillebord pr time", path: "/prices/table-rates" },
-
-        { label: "Drikkevarer & Snacks", path: "/prices/drinks" },
+        { da: "Spillebord pr time", en: "Table rates per hour", segment: "prices/table-rates" },
+        { da: "Drikkevarer & Snacks", en: "Drinks & Snacks", segment: "prices/drinks" },
       ],
     },
-    { label: "Åbningstider", path: "/opening-hours" },
+    { da: "Åbningstider", en: "Opening Hours", segment: "opening-hours" },
     {
-      label: "Om os",
-      path: "/about",
+      da: "Om os",
+      en: "About Us",
+      segment: "about",
       children: [
-        { label: "Find Vej", path: "/about/directions" },
-        { label: "FAQ", path: "/about/faq" },
-        { label: "Historie", path: "/about/history" },
+        { da: "Find Vej", en: "Directions", segment: "about/directions" },
+        { da: "FAQ", en: "FAQ", segment: "about/faq" },
+        { da: "Historie", en: "History", segment: "about/history" },
       ],
     },
   ];
+
+  const navItems = navConfig.map((item) => ({
+    label: isEnglish ? item.en : item.da,
+    path: item.segment ? `${prefix}/${item.segment}` : prefix || "/",
+    children: item.children?.map((child) => ({
+      label: isEnglish ? child.en : child.da,
+      path: `${prefix}/${child.segment}`,
+    })),
+  }));
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -48,13 +61,13 @@ export function Layout() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 group">
+            <Link to={prefix || "/"} className="flex items-center gap-2 group">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
                 <span className="text-white text-xl">🎲</span>
               </div>
               <div className="hidden sm:block">
-                <div className="font-semibold text-lg text-white"> Game Café</div>
-                <div className="text-xs text-white/60">Brætspil • VR</div>
+                <div className="font-semibold text-lg text-white"> BoardGame Café</div>
+                <div className="text-xs text-white/60">{isEnglish ? "Board Games • VR" : "Brætspil • VR"}</div>
               </div>
             </Link>
 
@@ -66,8 +79,8 @@ export function Layout() {
                     <Link
                       to={item.path}
                       className={`px-4 py-2 rounded-md flex items-center gap-1 transition-colors ${location.pathname === item.path || location.pathname.startsWith(item.path + "/")
-                          ? "bg-primary/20 text-primary"
-                          : "hover:bg-white/10 text-white/90"
+                        ? "bg-primary/20 text-primary"
+                        : "hover:bg-white/10 text-white/90"
                         }`}
                     >
                       {item.label}
@@ -91,26 +104,30 @@ export function Layout() {
                     key={item.path}
                     to={item.path}
                     className={`px-4 py-2 rounded-md transition-colors ${location.pathname === item.path
-                        ? "bg-primary/20 text-primary"
-                        : "hover:bg-white/10 text-white/90"
+                      ? "bg-primary/20 text-primary"
+                      : "hover:bg-white/10 text-white/90"
                       }`}
                   >
                     {item.label}
                   </Link>
                 )
               )}
-              <Link to="/book">
+              <Link to={`${prefix}/book`}>
                 <Button className="ml-2">Book</Button>
               </Link>
+              <LanguageToggle />
             </nav>
 
             {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 hover:bg-white/10 rounded-md transition-colors text-white"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            <div className="lg:hidden flex items-center gap-1">
+              <LanguageToggle />
+              <button
+                className="p-2 hover:bg-white/10 rounded-md transition-colors text-white"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Navigation */}
@@ -121,8 +138,8 @@ export function Layout() {
                   <Link
                     to={item.path}
                     className={`block px-4 py-2 rounded-md transition-colors ${location.pathname === item.path
-                        ? "bg-primary/20 text-primary"
-                        : "hover:bg-white/10 text-white/90"
+                      ? "bg-primary/20 text-primary"
+                      : "hover:bg-white/10 text-white/90"
                       }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -135,8 +152,8 @@ export function Layout() {
                           key={child.path}
                           to={child.path}
                           className={`block px-4 py-2 rounded-md text-sm transition-colors ${location.pathname === child.path
-                              ? "bg-primary/20 text-primary"
-                              : "hover:bg-white/10 text-white/60"
+                            ? "bg-primary/20 text-primary"
+                            : "hover:bg-white/10 text-white/60"
                             }`}
                           onClick={() => setMobileMenuOpen(false)}
                         >
@@ -147,8 +164,8 @@ export function Layout() {
                   )}
                 </div>
               ))}
-              <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full mt-4">Book et bord</Button>
+              <Link to={`${prefix}/book`} onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full mt-4">{isEnglish ? "Book a table" : "Book et bord"}</Button>
               </Link>
             </div>
           )}
@@ -165,43 +182,45 @@ export function Layout() {
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="mb-4">Game Café</h3>
+              <h3 className="mb-4">BoardGame Café</h3>
               <p className="text-sm text-white/60">
-                Din hyggelige destination for brætspil and VR oplevelser i hjertet af København.
+                {isEnglish
+                  ? "Your cozy destination for board games and VR experiences in the heart of Copenhagen."
+                  : "Din hyggelige destination for brætspil and VR oplevelser i hjertet af København."}
               </p>
             </div>
             <div>
-              <h4 className="mb-4">Hurtige Links</h4>
+              <h4 className="mb-4">{isEnglish ? "Quick Links" : "Hurtige Links"}</h4>
               <ul className="space-y-2 text-sm text-white/60">
                 <li>
-                  <Link to="/board-games" className="hover:text-primary transition-colors">
-                    Brætspil
+                  <Link to={`${prefix}/board-games`} className="hover:text-primary transition-colors">
+                    {isEnglish ? "Board Games" : "Brætspil"}
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/vr" className="hover:text-primary transition-colors">
-                    VR Oplevelser
+                  <Link to={`${prefix}/vr`} className="hover:text-primary transition-colors">
+                    {isEnglish ? "VR Experiences" : "VR Oplevelser"}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/book" className="hover:text-primary transition-colors">
+                  <Link to={`${prefix}/book`} className="hover:text-primary transition-colors">
                     Book
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-4">Kontakt</h4>
+              <h4 className="mb-4">{isEnglish ? "Contact" : "Kontakt"}</h4>
               <ul className="space-y-2 text-sm text-white/60">
                 <li>📍 Nørre Voldgade 18, 1358 København K</li>
                 <li>📞 +45 42 90 91 91</li>
-                <li>📧 info@brætspilscafe.dk</li>
+                <li>📧 info@boardgamecafe.dk</li>
               </ul>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-white/10 text-center text-sm text-white/40">
-            © 2026  Game Café. Alle rettigheder forbeholdes.
+            © 2026  BoardGame Café. {isEnglish ? "All rights reserved." : "Alle rettigheder forbeholdes."}
           </div>
         </div>
       </footer>
